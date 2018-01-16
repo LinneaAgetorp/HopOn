@@ -1,9 +1,6 @@
-
-
 .defaultButton, .menuButton, .facebookButton {
   display: inline-block;
   color: white; }
-
 
 /* sass breakpoint mixin */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -421,7 +418,6 @@ h2 {
 h4 {
   margin: 1em; }
 
-
 .how-to-use {
   display: flex;
   flex-direction: column;
@@ -479,7 +475,6 @@ h4 {
   border-radius: 0px;
   padding: 10px; }
 
-
 .appwrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -515,8 +510,6 @@ h4 {
 .footericon {
   height: 47px;
   width: auto; }
-
-
 
 #submit {
   width: 100px;
@@ -573,3 +566,14 @@ form {
   #submit {
     margin-left: em; } }
 
+.create-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em; }
+  .create-account input[type=text], .create-account input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: block; }
