@@ -1,3 +1,10 @@
+
+
+.defaultButton, .menuButton, .facebookButton {
+  display: inline-block;
+  color: white; }
+
+
 /* sass breakpoint mixin */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -414,6 +421,7 @@ h2 {
 h4 {
   margin: 1em; }
 
+
 .how-to-use {
   display: flex;
   flex-direction: column;
@@ -455,6 +463,23 @@ h4 {
   grid-column: 1;
   grid-row: 1 / span 2; }
 
+.defaultButton {
+  background: #28AAB5;
+  border-radius: 5px;
+  padding: 10px; }
+
+.menuButton {
+  background: #868DA7;
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 50%; }
+
+.facebookButton {
+  background: #2F5F9E;
+  border-radius: 0px;
+  padding: 10px; }
+
+
 .appwrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -490,3 +515,61 @@ h4 {
 .footericon {
   height: 47px;
   width: auto; }
+
+
+
+#submit {
+  width: 100px;
+  background-color: #553326;
+  color: white;
+  margin-left: 7em;
+  height: 2em; }
+
+input {
+  margin-top: 1em; }
+
+#firstname {
+  margin-left: 1em; }
+
+a {
+  text-decoration: none;
+  color: #553326; }
+
+a:hover {
+  color: #95989a;
+  text-decoration: underline; }
+
+#minasidor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-bottom: 4em;
+  max-width: 1000px;
+  color: #553326; }
+
+#minasidor {
+  grid-column: 1/ 3;
+  grid-row: 1;
+  text-align: center; }
+
+form {
+  grid-column: 1/ 2;
+  grid-row: 2;
+  margin: auto; }
+
+.register {
+  grid-column: 2/ 2;
+  grid-row: 2;
+  text-align: center; }
+
+@media (max-width: 40em) {
+  #minasidor-grid {
+    display: flex;
+    flex-direction: column; }
+  .register {
+    height: 50px;
+    margin: 1.5em;
+    padding: 1em; }
+  #submit {
+    margin-left: em; } }
+
