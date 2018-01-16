@@ -1,0 +1,12 @@
+.create-account {
+    @include center-content;
+    padding: 2em;
+
+  input[type=text], input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: block;
+     
+  }
+}
