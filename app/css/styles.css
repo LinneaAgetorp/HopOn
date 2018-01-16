@@ -479,7 +479,9 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20px 80px;
-  background: none; }
+  background: none;
+  position: absolute;
+  bottom: 0; }
   .appwrapper .appfooter {
     background: white;
     grid-row: 2;
@@ -577,3 +579,4 @@ form {
     padding: 15px;
     margin: 5px 0 22px 0;
     display: block; }
+

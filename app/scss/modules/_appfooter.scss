@@ -4,6 +4,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 20px 80px;
     background:none;
+    position:absolute;
+    bottom:0;
     .appfooter {
         background: white;
         grid-row: 2;
