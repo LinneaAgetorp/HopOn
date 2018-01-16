@@ -15,3 +15,20 @@
         @warn "Unfortunately, no value could be retrieved from #{$breakpoint}. Available breakpoints are: #{map-keys($breakpoints)}.";
     }
 }
+
+// Center content
+
+@mixin center-content() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin make-button($color: #28AAB5, $roundness: 5px, $padding: 10px) {
+    @extend %button;
+    background: $color;
+    border-radius: $roundness;
+    padding: $padding;
+
+}
