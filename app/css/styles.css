@@ -1,9 +1,6 @@
-
-
 .defaultButton, .menuButton, .facebookButton {
   display: inline-block;
   color: white; }
-
 
 /* sass breakpoint mixin */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -401,6 +398,9 @@ body {
   margin: 0 auto;
   padding: 0; }
 
+.site {
+  background-color: #CECECE; }
+
 li {
   list-style: none;
   text-decoration: none; }
@@ -415,53 +415,61 @@ a {
   margin: 0 auto;
   padding: 0; }
 
-h2 {
-  margin: 1.8em; }
+h1, h2, h3, h4 {
+  color: white; }
 
-h4 {
+h1 {
+  font-size: 3em;
   margin: 1em; }
 
+h2 {
+  font-size: 2.5em;
+  margin: 1em; }
 
 .how-to-use {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em 4em; }
-
-#find-bike, #unlock-bike {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-gap: 2em;
   margin: 1em; }
+  @media (min-width: 45em) {
+    .how-to-use {
+      margin: 1em 7em; } }
 
-#find-bike-title {
-  grid-column: 1;
-  grid-row: 1; }
+@media (max-width: 40em) {
+  #find-bike-title, #unlock-bike-title {
+    text-align: center; }
+  #find-bike img, #unlock-bike img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 200px;
+    height: 300px;
+    margin: 1em auto; } }
 
-#find-bike-text {
-  grid-column: 1;
-  grid-row: 2; }
+#find-bike img, #unlock-bike img {
+  border: 2px solid black; }
 
-#find-bike img {
-  width: 100%;
-  height: auto;
-  grid-column: 2;
-  grid-row: 1 / span 2; }
-
-#unlock-bike-title {
-  grid-column: 2;
-  grid-row: 1; }
-
-#unlock-bike-text {
-  grid-column: 2;
-  grid-row: 2; }
-
-#unlock-bike img {
-  width: 100%;
-  height: auto;
-  grid-column: 1;
-  grid-row: 1 / span 2; }
+@media (min-width: 45em) {
+  #find-bike, #unlock-bike {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 2em;
+    margin: 3em 0; }
+  #find-bike-title, #unlock-bike-title {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1em 0; }
+  #find-bike-text, #unlock-bike-text {
+    grid-column: 1;
+    grid-row: 2; }
+  #find-bike img, #unlock-bike img {
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1 / span 2; } }
 
 .defaultButton {
   background: #28AAB5;
@@ -478,7 +486,6 @@ h4 {
   background: #2F5F9E;
   border-radius: 0px;
   padding: 10px; }
-
 
 .appwrapper {
   display: grid;
@@ -515,8 +522,6 @@ h4 {
 .footericon {
   height: 47px;
   width: auto; }
-
-
 
 #submit {
   width: 100px;
@@ -572,4 +577,3 @@ form {
     padding: 1em; }
   #submit {
     margin-left: em; } }
-

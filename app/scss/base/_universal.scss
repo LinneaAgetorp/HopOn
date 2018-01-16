@@ -2,6 +2,9 @@ body{
     margin: 0 auto;
     padding: 0;
 }
+.site{
+    background-color: #CECECE;
+}
 
 li{
     list-style: none;
@@ -18,9 +21,16 @@ a{
     padding: 0;
 }
 
-h2{
-    margin: 1.8em;
+h1, h2, h3, h4{
+    color: map_get($colors, bright);
 }
-h4{
+
+h1{
+    font-size: 3em;
+    margin: 1em;
+}
+
+h2{
+    font-size: 2.5em;
     margin: 1em;
 }
