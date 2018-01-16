@@ -1,46 +1,59 @@
 .how-to-use{
   @include center-content;
-  margin: 1em 4em;
-}
-
-//grid styling
-#find-bike, #unlock-bike{
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-gap: 2em;
   margin: 1em;
+  @include respond-to(medium) {
+    margin: 1em 7em;
+  }
 }
 
-#find-bike-title{
-  grid-column: 1;
-  grid-row: 1;
+//styling image and text for mobile view
+@include respond-to(small){
+  #find-bike-title, #unlock-bike-title{
+    text-align: center;
+  }
+  #find-bike img, #unlock-bike img{
+    @include center-content;
+    width: 70%;
+    max-width: 200px;
+    height: 300px; //justera höjd när bilden läggs in
+    margin: 1em auto;
+  }
 }
 
-#find-bike-text{
-  grid-column: 1;
-  grid-row: 2;
+
+//border som "placeholder" för skärmdumparna från appen
+#find-bike img, #unlock-bike img{
+  border: 2px solid black;
 }
 
-#find-bike img{
-  width: 100%;
-  height: auto;
-  grid-column: 2;
-  grid-row: 1 / span 2;
-}
 
-#unlock-bike-title{
-  grid-column: 2;
-  grid-row: 1;
-}
+//grid styling for desktop
+@include respond-to(medium) {
+  #find-bike, #unlock-bike {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    //grid-template-rows: 1fr 2.5fr;
+    grid-column-gap: 2em;
+    margin: 3em 0;
+  }
 
-#unlock-bike-text{
-  grid-column: 2;
-  grid-row: 2;
-}
+  #find-bike-title, #unlock-bike-title {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1em 0;
+  }
 
-#unlock-bike img{
-  width: 100%;
-  height: auto;
-  grid-column: 1;
-  grid-row: 1 / span 2;
+  #find-bike-text, #unlock-bike-text {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #find-bike img, #unlock-bike img {
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+  }
+
 }
