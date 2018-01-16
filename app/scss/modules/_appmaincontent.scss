@@ -1,0 +1,17 @@
+.main-content-app {
+    background-image: url("../images/map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.headerimg {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.menubar {
+    display: flex;
+    align-items: baseline;
+}
