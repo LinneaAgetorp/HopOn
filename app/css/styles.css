@@ -1,3 +1,7 @@
+.defaultButton, .menuButton, .facebookButton {
+  display: inline-block;
+  color: white; }
+
 /* sass breakpoint mixin */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -413,3 +417,19 @@ h2 {
 
 h4 {
   margin: 1em; }
+
+.defaultButton {
+  background: #28AAB5;
+  border-radius: 5px;
+  padding: 10px; }
+
+.menuButton {
+  background: #868DA7;
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 50%; }
+
+.facebookButton {
+  background: #2F5F9E;
+  border-radius: 0px;
+  padding: 10px; }

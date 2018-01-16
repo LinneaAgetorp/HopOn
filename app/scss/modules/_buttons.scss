@@ -1,0 +1,12 @@
+.defaultButton {
+    @include make-button();
+}
+
+.menuButton {
+    @include make-button(#868DA7, 20px, 20px);
+    opacity: 50%;
+}
+
+.facebookButton {
+    @include make-button(#2F5F9E, 0px);
+}
