@@ -16,9 +16,10 @@
     }
 }
 
-/ Center content
-@mixin center-content {
+// Center content
+@mixin center-content() {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

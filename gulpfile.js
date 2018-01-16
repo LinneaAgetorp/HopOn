@@ -9,7 +9,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
-var louis = require('gulp-npm ');
+var louis = require('gulp-louis');
 var sassdoc = require('sassdoc');
 
 // Basic Gulp task syntax
@@ -24,7 +24,7 @@ gulp.task('hello', function() {
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'app',
+      baseDir: 'app/site-index.html',
     }
   })
 })
