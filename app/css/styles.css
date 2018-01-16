@@ -612,3 +612,34 @@ form {
 .menubar {
   display: flex;
   align-items: baseline; }
+
+#business-hero {
+  background-image: url("../images/hop-on-nature.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(30%);
+  width: 100vw;
+  height: 35em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+  #business-hero #business-headline {
+    font-size: 6em;
+    grid-column: 2;
+    grid-row: 3; }
+
+.business-inquiries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+@media (min-width: 45em) {
+  #business-wrapper {
+    margin: 1em 7em;
+    display: flex; }
+    #business-wrapper p, #business-wrapper img {
+      width: 45%;
+      line-height: 30px; }
+    #business-wrapper img {
+      height: 90%; } }
