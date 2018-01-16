@@ -4,6 +4,9 @@
   @include respond-to(medium) {
     margin: 1em 7em;
   }
+  p {
+    line-height: 30px;
+  }
 }
 
 //styling image and text for mobile view
