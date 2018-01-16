@@ -30,6 +30,42 @@ h2 {
 h4 {
   margin: 1em; }
 
+.appwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20px 80px;
+  background: none; }
+  .appwrapper .appfooter {
+    background: white;
+    grid-row: 2;
+    grid-column: 1/4;
+    width: 100vw; }
+
+.nearby {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  grid-row: 2;
+  grid-column: 1; }
+
+.favorite {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  grid-row: 2;
+  grid-column: 3; }
+
+.bike {
+  grid-row: 1/3;
+  grid-column: 2; }
+  .bike .bikeicon {
+    height: 92px;
+    width: auto; }
+
+.footericon {
+  height: 47px;
+  width: auto; }
+
 #green-cup img {
   display: flex;
   width: 35vw;
@@ -169,10 +205,6 @@ header {
   #our-coffee-img img {
     width: 50%;
     height: 300px; } }
-
-p {
-  text-align: center;
-  margin-top: 1em; }
 
 #submit {
   width: 100px;
@@ -386,22 +418,3 @@ nav {
     grid-template-columns: 50% 50%; }
     .main #S2 {
       margin-top: 0; } }
-
-footer {
-  background-color: #553326;
-  color: white;
-  text-align: center;
-  padding: 30px;
-  font-size: 25px; }
-
-@media (min-width: 45em) {
-  footer {
-    background-color: #553326;
-    margin-top: -10px; }
-  .social {
-    margin-top: -10px;
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    padding: 50px; } }
