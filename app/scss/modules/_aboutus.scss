@@ -1,0 +1,50 @@
+//Styling hero image and headline about us for mobile and desktop
+#aboutus-hero{
+  background-image: url("../images/bike-light.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20em;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  @include respond-to('medium') {
+    height: 35em;
+  }
+  #aboutus-title {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    font-size: 4.6em;
+    @include respond-to('medium') {
+    grid-column: 1;
+      font-size: 6em;
+    }
+  }
+}
+
+
+//styling quote
+#citat-wrapper{
+  @include center-content();
+  padding: 1em;
+  @include respond-to('medium'){
+    width: 50%;
+  }
+  #citat{
+    text-align: center;
+  }
+}
+
+#columns-wrapper{
+  margin: 1em;
+  p{
+    line-height: 30px;
+  }
+  @include respond-to('medium'){
+    margin: 1em 7em;
+    display: flex;
+  #column1, #column2 {
+    padding: 2em;
+    width: 50%;
+  }
+  }
+}
