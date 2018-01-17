@@ -1,12 +1,20 @@
 .create-account {
-    @include center-content;
-    padding: 2em;
+    max-width: 80vw;
+    margin: auto;
 
+    /// Input styling
   input[type=text], input[type=password] {
-    width: 80%;
+    border: none;
     padding: 15px;
     margin: 5px 0 22px 0;
-    display: block;
-     
+    background: #E8E9F3;
+    width: 100%;
   }
+
+  /// Center submit button
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
 }
