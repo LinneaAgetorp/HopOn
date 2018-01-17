@@ -1,3 +1,5 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400,500,700);
 .defaultButton, .menuButton, .facebookButton {
   display: inline-block;
   color: white; }
@@ -398,6 +400,9 @@ body {
   margin: 0 auto;
   padding: 0; }
 
+.site {
+  background-color: #CECECE; }
+
 li {
   list-style: none;
   text-decoration: none; }
@@ -408,54 +413,64 @@ a {
   padding: 0; }
 
 * {
-  font-family: 'Barlow Semi Condensed', sans-serif;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box; }
 
-h4 {
+
+h2 {
+  font-size: 2.5em;
   margin: 1em; }
+
+p {
+  font-family: "Roboto", sans-serif; }
 
 .how-to-use {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em 4em; }
-
-#find-bike, #unlock-bike {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  grid-gap: 2em;
   margin: 1em; }
+  @media (min-width: 45em) {
+    .how-to-use {
+      margin: 1em 7em; } }
+  .how-to-use p {
+    line-height: 30px; }
 
-#find-bike-title {
-  grid-column: 1;
-  grid-row: 1; }
+@media (max-width: 40em) {
+  #find-bike-title, #unlock-bike-title {
+    text-align: center; }
+  #find-bike img, #unlock-bike img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 200px;
+    height: 300px;
+    margin: 1em auto; } }
 
-#find-bike-text {
-  grid-column: 1;
-  grid-row: 2; }
+#find-bike img, #unlock-bike img {
+  border: 2px solid black; }
 
-#find-bike img {
-  width: 100%;
-  height: auto;
-  grid-column: 2;
-  grid-row: 1 / span 2; }
-
-#unlock-bike-title {
-  grid-column: 2;
-  grid-row: 1; }
-
-#unlock-bike-text {
-  grid-column: 2;
-  grid-row: 2; }
-
-#unlock-bike img {
-  width: 100%;
-  height: auto;
-  grid-column: 1;
-  grid-row: 1 / span 2; }
+@media (min-width: 45em) {
+  #find-bike, #unlock-bike {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 2em;
+    margin: 3em 0; }
+  #find-bike-title, #unlock-bike-title {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1em 0; }
+  #find-bike-text, #unlock-bike-text {
+    grid-column: 1;
+    grid-row: 2; }
+  #find-bike img, #unlock-bike img {
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1 / span 2; } }
 
 .defaultButton {
   background: #28AAB5;
@@ -477,7 +492,9 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20px 80px;
-  background: none; }
+  background: none;
+  position: absolute;
+  bottom: 0; }
   .appwrapper .appfooter {
     background: white;
     grid-row: 2;
@@ -571,22 +588,51 @@ form {
     border: none;
     padding: 15px;
     margin: 5px 0 22px 0;
-    background: #E8E9F3;
-    width: 100%; }
-  .create-account .submit-btn {
-    display: flex;
-    justify-content: center; }
 
-.app-top {
-  border-bottom: 1px solid lightgray;
+    display: block; }
+
+.main-content-app {
+  background-image: url("../images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+
+.headerimg img {
+  width: 100%;
+  height: auto; }
+
+.menubar {
   display: flex;
+  align-items: baseline; }
+
+#business-hero {
+  background-image: url("../images/hop-on-nature.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(30%);
+  width: 100vw;
+  height: 35em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+  #business-hero #business-headline {
+    font-size: 6em;
+    grid-column: 2;
+    grid-row: 3; }
+
+.business-inquiries {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: baseline;
-  padding: 2em;
-  margin-bottom: 1em; }
-  .app-top .topicon {
-    height: 47px;
-    width: auto;
-    margin: 0; }
-  .app-top h2 {
-    margin: 0 1em; }
+  align-items: center; }
+
+@media (min-width: 45em) {
+  #business-wrapper {
+    margin: 1em 7em;
+    display: flex; }
+    #business-wrapper p, #business-wrapper img {
+      width: 45%;
+      line-height: 30px; }
+    #business-wrapper img {
+      height: 90%; } }
+
