@@ -757,11 +757,11 @@ form {
     font-size: 1.7em;
     font-family: Arial, Helvetica, sans-serif; }
 
-.main-content-app {
+#appbody {
   background-image: url("../images/map.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh; }
+  height: 100vh; }
 
 .headerimg img {
   width: 100%;
@@ -890,6 +890,71 @@ form {
   margin-top: 0;
   text-align: center; }
 
+#appnavmenu {
+  height: 100vh;
+  background: white;
+  position: fixed;
+  width: 60vw;
+  font-family: Helvetica, sans-serif;
+  transform: translateX(-100%);
+  transition: all 0.3s; }
+
+.test {
+  background: rgba(10, 9, 9, 0.705);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  transition: ease-in 0.1s;
+  display: none; }
+
+.appnavclose {
+  font-weight: bold;
+  margin-left: 160px;
+  font-size: 25px; }
+
+.appnavheader {
+  border-bottom: 1px solid rgba(71, 71, 71, 0.178);
+  display: flex;
+  height: 60px;
+  margin-left: -30px;
+  align-items: center; }
+  .appnavheader p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -50px; }
+  .appnavheader img {
+    width: 40px; }
+
+.appnavlink {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(71, 71, 71, 0.178);
+  height: 130px;
+  justify-content: center; }
+  .appnavlink p {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px; }
+  .appnavlink img {
+    width: 35px;
+    height: auto;
+    padding: 5px; }
+  .appnavlink a {
+    text-decoration: none;
+    color: black; }
+
+label {
+  cursor: pointer; }
+
+#mainNavButton {
+  display: none; }
+
+#mainNavButton:checked ~ #appnavmenu {
+  transform: translateX(0%); }
+
+#mainNavButton:checked ~ .test {
+  display: block; }
+
 #contact-us-headline {
   display: flex;
   flex-direction: column;
@@ -951,3 +1016,47 @@ form {
     justify-content: center; }
     .button-wrap .square-button {
       width: 50%; } }
+
+#aboutus-hero {
+  background-image: url("../images/bike-light.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20em;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+  @media (min-width: 45em) {
+    #aboutus-hero {
+      height: 35em; } }
+  #aboutus-hero #aboutus-title {
+    grid-column: 1/span 2;
+    grid-row: 1;
+    font-size: 4.6em; }
+    @media (min-width: 45em) {
+      #aboutus-hero #aboutus-title {
+        grid-column: 1;
+        font-size: 6em; } }
+
+#citat-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em; }
+  @media (min-width: 45em) {
+    #citat-wrapper {
+      width: 50%; } }
+  #citat-wrapper #citat {
+    text-align: center; }
+
+#columns-wrapper {
+  margin: 1em; }
+  #columns-wrapper p {
+    line-height: 30px; }
+  @media (min-width: 45em) {
+    #columns-wrapper {
+      margin: 1em 7em;
+      display: flex; }
+      #columns-wrapper #column1, #columns-wrapper #column2 {
+        padding: 2em;
+        width: 50%; } }
