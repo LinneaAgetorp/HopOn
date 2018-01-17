@@ -59,4 +59,6 @@ typings/
 
 .idea
 
-.app/css
+app/css/
+
+test/

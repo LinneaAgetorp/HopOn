@@ -1,9 +1,21 @@
+//styling hero-image and headline
 #business-hero{
   background-image: url("../images/hop-on-nature.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(30%);
   width: 100vw;
+  height: 20em;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  #business-headline{
+    font-size: 4.6em;
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    text-align: center;
+  }
+  @include respond-to('medium') { //desktop view
   height: 35em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -12,6 +24,7 @@
       font-size: 6em;
       grid-column: 2;
       grid-row: 3;
+    }
   }
 }
 
@@ -20,16 +33,61 @@
 
 }
 
+#business-wrapper{
+  margin: 1em;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  p{
+    line-height: 30px;
+    padding-bottom: 1em;
+  }
+}
+
+#business-title{
+  @include center-content();
+  text-align: center;
+}
+
 @include respond-to('medium') {
   #business-wrapper {
     margin: 1em 7em;
     display: flex;
     p, img {
       width: 45%;
-      line-height: 30px;
     }
     img{
       height: 90%;
     }
   }
+}
+
+//styling dividing line "or give us a call"
+#or {
+  display: flex;
+  align-items: center;
+  svg {
+    width: 80px;
+    height: 10px;
+    @include respond-to('medium') {
+      width: 250px;
+    }
+  }
+    span {
+      padding: 1.5em;
+      font-family: map_get($fonts, font-headlines);
+      font-size: 1.5em;
+      @include respond-to('medium') {
+        padding: 2em;
+        font-size: 3em;
+      }
+    }
+  }
+
+#give-us-a-call{
+  @include center-content();
+  font-family: map_get($fonts, font-headlines);
+  margin-top: 0;
+  text-align: center;
 }
