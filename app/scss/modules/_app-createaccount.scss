@@ -1,14 +1,11 @@
 .create-account {
     max-width: 80vw;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
 
     /// Input styling
   input[type=text], input[type=password] {
-    border: none;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    background: #E8E9F3;
-    width: 100%;
+    @include make-form(#E8E9F3, 100%)
   }
 
   /// Center submit button

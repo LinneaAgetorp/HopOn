@@ -34,3 +34,13 @@
     padding: $padding;
 
 }
+
+/// Mixin for forms
+@mixin make-form($color, $width, $margin: 5px 0 22px 0, $padding: 15px) {
+    @extend %form;
+    background: $color;
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+
+}
