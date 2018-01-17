@@ -2,6 +2,9 @@ body{
     margin: 0 auto;
     padding: 0;
 }
+.site{
+    background-color: #CECECE;
+}
 
 li{
     list-style: none;
@@ -13,14 +16,29 @@ a{
     padding: 0;
 }
 *{
-    font-family: 'Barlow Semi Condensed', sans-serif;
+
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4{
+    color: map_get($colors, bright);
+    font-family: map_get($fonts, font-headlines);
+}
+
+h1{
+    font-size: 3em;
+    margin: 1em;
 }
 
 h2{
-    margin: 1.8em;
-}
-h4{
+    font-size: 2.5em;
     margin: 1em;
+}
+
+p{
+    font-family: map_get($fonts, font-text);
+
 }
