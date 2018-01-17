@@ -1,3 +1,6 @@
+/// Fonts
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400,500,700);
 
 /// breakpoints
 $breakpoints:(
@@ -18,4 +21,7 @@ $colors: (
 ) !default;
 
 ///Font
-$font: 'Barlow Semi Condensed', sans-serif;
+$fonts: (
+font-text: ('Roboto', sans-serif),
+font-headlines: ('Lobster', serif)
+)
