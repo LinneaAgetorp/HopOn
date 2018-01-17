@@ -7,7 +7,7 @@
 /* sass breakpoint mixin */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
- */
+   ========================================================================== */
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in
@@ -417,6 +417,13 @@ a {
   padding: 0;
   box-sizing: border-box; }
 
+h1, h2, h3, h4 {
+  color: white;
+  font-family: "Lobster", serif; }
+
+h1 {
+  font-size: 3em;
+  margin: 1em; }
 
 h2 {
   font-size: 2.5em;
@@ -588,8 +595,25 @@ form {
     border: none;
     padding: 15px;
     margin: 5px 0 22px 0;
+    background: #E8E9F3;
+    width: 100%; }
+  .create-account .submit-btn {
+    display: flex;
+    justify-content: center; }
 
-    display: block; }
+.app-top {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 2em;
+  margin-bottom: 1em; }
+  .app-top .topicon {
+    height: 47px;
+    width: auto;
+    margin: 0; }
+  .app-top h2 {
+    margin: 0 1em; }
 
 .main-content-app {
   background-image: url("../images/map.png");
@@ -639,7 +663,6 @@ form {
   cursor: pointer;
   font-size: 17px;
   margin-left: -10px; }
-  align-items: baseline; }
 
 #business-hero {
   background-image: url("../images/hop-on-nature.jpeg");
@@ -697,7 +720,6 @@ form {
       width: 45%; }
     #business-wrapper img {
       height: 90%; } }
-
 
 #or {
   display: flex;
@@ -787,5 +809,3 @@ form {
     justify-content: center; }
     .button-wrap .square-button {
       width: 50%; } }
-
-
