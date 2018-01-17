@@ -1,0 +1,70 @@
+/* Style the whole hamburger icon */
+#mobile-nav {
+    height: 20px;
+    position: relative;
+    padding: 2em;
+    transition: all 0.5s ease-in-out;
+
+    /* Style the hamburger layers */
+    span {
+        position: absolute;
+        margin: 1em;
+        height: 9px;
+        width: 60px;
+        background-color: white;
+        border-radius: 9px;
+        left: 0;
+        transition: all 0.25s ease-in-out;
+
+        /* Position hamburger layers */
+        @for $i from 1 through 3 {
+            &:nth-of-type(#{$i}) {
+                top: ($i - 1)*18px;
+            }
+        }
+    }
+}
+
+/* Checkbox control */
+#toggle-menu {
+    /* hide checkbox */
+    display: none;
+}
+
+/* Close icon */
+#close {
+    background: #272635;
+    height: 15px;
+    position: relative;
+    padding: 2em 3em;
+    transition: all 0.5s ease-in-out;
+
+    span {
+        display: block;
+        position: absolute;
+        margin: 1em;
+        height: 9px;
+        width: 60px;
+        background-color: white;
+        border-radius: 9px;
+        left: 0;
+        transition: all 0.25s ease-in-out;
+
+        &:nth-child(1) {
+            top: 18px;
+            transform: rotate(135deg);
+        }
+
+        &:nth-child(2) {
+            top: 18px;
+            transform: rotate(-135deg);
+        }
+    }
+}
+
+/* Don't show hamburger icon on desktop */
+@include respond-to("small") {
+    label.menu {
+        display: none;
+    }
+}

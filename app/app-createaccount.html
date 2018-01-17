@@ -12,6 +12,39 @@
 </head>
 
 <body>
+    <input class="trigger" type="checkbox" id="mainNavButton">
+    <div class="test">
+    </div>
+     <!-- This is the menu for the app.  Hidden with checkbox -->
+    <nav id="appnavmenu">
+        <div class="appnavclose">
+            <label for="mainNavButton" class="menu" onclick>
+                <p>x</p>
+            </label>
+        </div>
+        <div class="appnavheader">
+            <img src="svg/menu.svg" alt="" class="appnavicon">
+            <p>Meny</p>
+        </div>
+        <ul>
+            <li class="appnavlink">
+                <img src="svg/004-profile.svg" alt="" class="appnavicon">
+                <a href="#"><p>Mitt konto</p></a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/003-cogwheels-for-settings.svg" alt="" class="appnavicon">
+                <a href="#"><p>Inställningar</p></a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/002-questions-circular-button.svg" alt="" class="appnavicon">
+                <a href="#"><p>Hjälp</p></a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/001-screen.svg" alt="" class="appnavicon">
+                <a href="#"><p>Till webbsidan</p></a>
+            </li>
+        </ul>
+    </nav>
 
   <!-- Header with menu and search bar -->
   <header class="appheader">
@@ -20,9 +53,9 @@
     </div>
     <div class="menubar">
       <div class="appmenu">
-        <a href="#">
-          <p>Meny</p>
-        </a>
+          <label for="mainNavButton" class="menu" onclick>
+              <p>Meny</p>
+          </label>
       </div>
       <div class="search">
         <input type="text" class="searchTerm" placeholder="Sök efter hållplats...">

@@ -59,6 +59,10 @@ typings/
 
 .idea
 
+.app/css
+app/css
+app/css/*
+*.css.map
 app/css/
 
 test/

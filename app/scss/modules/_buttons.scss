@@ -3,8 +3,9 @@
 }
 
 .menuButton {
-    @include make-button(#868DA7, 20px, 20px);
+    @include make-button(rgba(134, 141, 167, 0.7), 20px, 20px);
     opacity: 50%;
+    width: 170px;
 }
 
 .facebookButton {
