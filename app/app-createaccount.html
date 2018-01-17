@@ -13,31 +13,68 @@
 
 <body>
 
-  <header>
-
+  <!-- Header with menu and search bar -->
+  <header class="appheader">
+    <div class="headerimg">
+      <img src="images/headertest.jpg" alt="">
+    </div>
+    <div class="menubar">
+      <div class="appmenu">
+        <a href="#">
+          <p>Meny</p>
+        </a>
+      </div>
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="Sök efter hållplats...">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
   </header>
+  <!--End header-->
 
+  <!-- App headline/Create account -->
   <div class="app-top">
-      <img class="topicon usericon" src="svg/004-profile.svg" alt="">
-      <h2>Skapa Konto</h2>
+    <img class="topicon usericon" src="svg/004-profile.svg" alt="">
+    <h5>Skapa Konto</h5>
   </div>
 
-    <form>
-      <div class="create-account">
+  <!-- Registration form -->
+  <form>
+    <div class="create-account">
 
-        <label>Epost</label>
-        <input type="text" name="email">
+      <label>Epost</label>
+      <input type="text" name="email">
 
-        <label>Lösenord</label>
-        <input type="password" name="psw">
+      <label>Lösenord</label>
+      <input type="password" name="psw">
 
-        <label>Upprepa lösenord</label>
-        <input type="password" name="psw-repeat">
+      <label>Upprepa lösenord</label>
+      <input type="password" name="psw-repeat">
 
-        <div class="submit-btn">
-          <a href="app-main.html" class="defaultButton">Bli medlem</a>
-        </div>
-    </form>
+      <div class="submit-btn">
+        <a href="app-main.html" class="defaultButton">Bli medlem</a>
+      </div>
+  </form>
+  <!-- End form -->
+
+  <!--Footer -->
+  <footer>
+    <div class="appwrapper">
+      <div class="appfooter"></div>
+      <div class="nearby">
+        <img class="footericon" src="svg/nearby.svg" alt="">
+        <p>Nära mig</p>
+      </div>
+      <div class="bike">
+        <img class="footericon bikeicon" src="svg/bike.svg" alt="">
+      </div>
+      <div class="favorite">
+        <img class="footericon" src="svg/favorite.svg" alt="">
+        <p>Favoriter</p>
+      </div>
+  </footer>
 
 
 
@@ -46,11 +83,11 @@
 
 
 
-    <!--build:js js/main.min.js -->
-    <script src="js/lib/a-library.js"></script>
-    <script src="js/lib/another-library.js"></script>
-    <script src="js/main.js"></script>
-    <!-- endbuild -->
+  <!--build:js js/main.min.js -->
+  <script src="js/lib/a-library.js"></script>
+  <script src="js/lib/another-library.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
 </body>
 
 </html>
