@@ -417,6 +417,13 @@ a {
   padding: 0;
   box-sizing: border-box; }
 
+h1, h2, h3, h4 {
+  color: white;
+  font-family: "Lobster", serif; }
+
+h1 {
+  font-size: 3em;
+  margin: 1em; }
 
 h2 {
   font-size: 2.5em;
@@ -588,14 +595,31 @@ form {
     border: none;
     padding: 15px;
     margin: 5px 0 22px 0;
+    background: #E8E9F3;
+    width: 100%; }
+  .create-account .submit-btn {
+    display: flex;
+    justify-content: center; }
 
-    display: block; }
+.app-top {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 2em;
+  margin-bottom: 1em; }
+  .app-top .topicon {
+    height: 47px;
+    width: auto;
+    margin: 0; }
+  .app-top h2 {
+    margin: 0 1em; }
 
-.main-content-app {
+#appbody {
   background-image: url("../images/map.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh; }
+  height: 100vh; }
 
 .headerimg img {
   width: 100%;
@@ -639,7 +663,6 @@ form {
   cursor: pointer;
   font-size: 17px;
   margin-left: -10px; }
-  align-items: baseline; }
 
 #business-hero {
   background-image: url("../images/hop-on-nature.jpeg");
@@ -672,3 +695,67 @@ form {
     #business-wrapper img {
       height: 90%; } }
 
+#appnavmenu {
+  height: 100vh;
+  background: white;
+  position: fixed;
+  width: 60vw;
+  font-family: Helvetica, sans-serif;
+  transform: translateX(-100%);
+  transition: all 0.3s; }
+
+.test {
+  background: rgba(10, 9, 9, 0.705);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  transition: ease-in 0.1s;
+  display: none; }
+
+.appnavclose {
+  font-weight: bold;
+  margin-left: 160px;
+  font-size: 25px; }
+
+.appnavheader {
+  border-bottom: 1px solid rgba(71, 71, 71, 0.178);
+  display: flex;
+  height: 60px;
+  margin-left: -30px;
+  align-items: center; }
+  .appnavheader p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -50px; }
+  .appnavheader img {
+    width: 40px; }
+
+.appnavlink {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(71, 71, 71, 0.178);
+  height: 130px;
+  justify-content: center; }
+  .appnavlink p {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px; }
+  .appnavlink img {
+    width: 35px;
+    height: auto;
+    padding: 5px; }
+  .appnavlink a {
+    text-decoration: none;
+    color: black; }
+
+label {
+  cursor: pointer; }
+
+#mainNavButton {
+  display: none; }
+
+#mainNavButton:checked ~ #appnavmenu {
+  transform: translateX(0%); }
+
+#mainNavButton:checked ~ .test {
+  display: block; }
