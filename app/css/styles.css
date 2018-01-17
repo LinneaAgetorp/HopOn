@@ -1,3 +1,4 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 .defaultButton, .menuButton, .facebookButton {
   display: inline-block;
   color: white; }
@@ -580,3 +581,51 @@ form {
     margin: 5px 0 22px 0;
     display: block; }
 
+.main-content-app {
+  background-image: url("../images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh; }
+
+.headerimg img {
+  width: 100%;
+  height: auto; }
+
+.menubar {
+  display: flex;
+  align-items: baseline;
+  height: 42px;
+  padding-bottom: 10px; }
+  .menubar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white; }
+
+.appmenu {
+  border-right: 1px solid #868282;
+  padding-right: 30px; }
+
+.appheader {
+  background: #CECECE; }
+
+.searchTerm {
+  border: 2px solid #28AAB5;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF; }
+
+.searchTerm:focus {
+  color: #28AAB5; }
+
+.searchButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #28AAB5;
+  background: #28AAB5;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-left: -10px; }
