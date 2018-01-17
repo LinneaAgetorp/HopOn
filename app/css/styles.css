@@ -1024,6 +1024,57 @@ label {
     .button-wrap .square-button {
       width: 50%; } }
 
+.setting-option {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  padding-bottom: 5px; }
+  .setting-option p {
+    margin-top: 25px; }
+
+.settings-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  font-family: Arial, Helvetica, sans-serif; }
+  .settings-btn .submit-btn {
+    padding: 5px; }
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden; }
+
+.slider label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 25px;
+  position: relative; }
+
+.slider label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 45px;
+  transition: 0.3s; }
+
+input:checked + label {
+  background: #28AAB5; }
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%); }
+
+label:active:after {
+  width: 20px; }
+
 #aboutus-hero {
   background-image: url("../images/bike-light.jpg");
   background-repeat: no-repeat;
