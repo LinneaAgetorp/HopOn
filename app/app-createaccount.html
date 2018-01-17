@@ -12,35 +12,74 @@
 </head>
 
 <body>
-  
-    <header>
-      
-    </header>
 
-    <div class="app-top">
+  <!-- Header with menu and search bar -->
+  <header class="appheader">
+    <div class="headerimg">
+      <img src="images/headertest.jpg" alt="">
+    </div>
+    <div class="menubar">
+      <div class="appmenu">
+        <a href="#">
+          <p>Meny</p>
+        </a>
+      </div>
+      <div class="search">
+        <input type="text" class="searchTerm" placeholder="Sök efter hållplats...">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!--End header-->
 
-        <form>
-            <div class="create-account">              
-          
-              <label>Epost</label>
-              <input type="text" name="email">
-          
-              <label>Lösenord</label>
-              <input type="password" name="psw">
-          
-              <label>Upprepa lösenord</label>
-              <input type="password" name="psw-repeat">
-          
-          
-              <p>By creating an account you agree to our <a href="#" >Terms & Privacy</a></p>
-          
-              <a href="app-main.html" class="defaultButton">Bli medlem</a>
-          </form>
+  <!-- App headline/Create account -->
+  <div class="app-top">
+    <img class="topicon usericon" src="svg/004-profile.svg" alt="">
+    <h5>Skapa Konto</h5>
+  </div>
 
-      
+  <!-- Registration form -->
+  <form>
+    <div class="create-account">
 
-      
-  
+      <label>Epost</label>
+      <input type="text" name="email">
+
+      <label>Lösenord</label>
+      <input type="password" name="psw">
+
+      <label>Upprepa lösenord</label>
+      <input type="password" name="psw-repeat">
+
+      <div class="submit-btn">
+        <a href="app-main.html" class="defaultButton">Bli medlem</a>
+      </div>
+  </form>
+  <!-- End form -->
+
+  <!--Footer -->
+  <footer>
+    <div class="appwrapper">
+      <div class="appfooter"></div>
+      <div class="nearby">
+        <img class="footericon" src="svg/nearby.svg" alt="">
+        <p>Nära mig</p>
+      </div>
+      <div class="bike">
+        <img class="footericon bikeicon" src="svg/bike.svg" alt="">
+      </div>
+      <div class="favorite">
+        <img class="footericon" src="svg/favorite.svg" alt="">
+        <p>Favoriter</p>
+      </div>
+  </footer>
+
+
+
+
+
 
 
 

@@ -1,0 +1,18 @@
+.app-top {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2em;
+    margin-bottom: 1em;
+    .topicon {
+        height: 47px;
+        width: auto;
+        margin: 0;
+    }
+    h5 {
+        margin: 0 1em;
+        font-size: 1.7em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

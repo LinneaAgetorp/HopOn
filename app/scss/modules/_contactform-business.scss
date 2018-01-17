@@ -1,0 +1,84 @@
+#contact-us-headline{
+  @include center-content();
+}
+
+
+//styling layout of contact-section
+.form-wrapper{
+  border-top: 3px solid whitesmoke;
+  padding-bottom: 2em;
+  border-bottom: 3px solid whitesmoke;
+  p{
+    text-align: center;
+    font-size: 1.6em;
+  }
+  #form-title{
+    text-align: center;
+  }
+}
+
+
+//contact form styling
+.contact-form{
+  margin-top: 30px;
+  width: 75vw;
+  .input-block{
+    background-color: white;
+    border: solid 1px grey;
+    padding: 0.6em;
+    margin-bottom: 20px;
+
+    &.textarea{
+      height: 100%;
+      .form-control{
+        height: auto;
+        resize: none;
+      }
+    }
+
+    .form-control{
+      margin: 0;
+      padding: 0.6em 0;
+      border: none;
+      height: auto;
+      width: 97%;
+      font-size: 18px;
+      color: map_get($colors, dark);
+    }
+
+
+  }
+  //byt ut knappen till mixin eller placeholder
+  .square-button{
+    @include make-button(#272635, 5px, 5px);
+    height: 60px;
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 60px;
+    width: 100%;
+    &:hover,
+    &:focus{
+      background-color: #000000;
+      cursor: pointer;
+    }
+  }
+}
+
+//tablet and above devices
+@include respond-to('medium') {
+  .col-50 {
+    display: inline-block;
+    width: 49.5%;
+  }
+  .button-wrap{
+    display: flex;
+    justify-content: center;
+    .square-button{
+      width: 50%;
+    }
+
+  }
+}

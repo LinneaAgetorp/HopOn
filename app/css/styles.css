@@ -1,7 +1,12 @@
-.defaultButton, .menuButton, .facebookButton {
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400,500,700);
+.defaultButton, .menuButton, .facebookButton, .contact-form .square-button {
   display: inline-block;
   color: white;
   text-align: center; }
+
+.create-account input[type=text], .create-account input[type=password] {
+  border: none; }
 
 /* sass breakpoint mixin */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -399,6 +404,9 @@ body {
   margin: 0 auto;
   padding: 0; }
 
+.site {
+  background-color: #CECECE; }
+
 li {
   list-style: none;
   text-decoration: none; }
@@ -409,15 +417,71 @@ a {
   padding: 0; }
 
 * {
-  font-family: 'Barlow Semi Condensed', sans-serif;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4 {
+  color: white;
+  font-family: "Lobster", serif; }
+
+h1 {
+  font-size: 3em;
+  margin: 1em; }
 
 h2 {
-  margin: 1.8em; }
-
-h4 {
+  font-size: 2.5em;
   margin: 1em; }
+
+p {
+  font-family: "Roboto", sans-serif; }
+
+.how-to-use {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em; }
+  @media (min-width: 45em) {
+    .how-to-use {
+      margin: 1em 7em; } }
+  .how-to-use p {
+    line-height: 30px; }
+
+@media (min-width: 40em) {
+  #find-bike-title, #unlock-bike-title {
+    text-align: center; }
+  #find-bike img, #unlock-bike img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 200px;
+    height: 300px;
+    margin: 1em auto; } }
+
+#find-bike img, #unlock-bike img {
+  border: 2px solid black; }
+
+@media (min-width: 45em) {
+  #find-bike, #unlock-bike {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 2em;
+    margin: 3em 0; }
+  #find-bike-title, #unlock-bike-title {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1em 0; }
+  #find-bike-text, #unlock-bike-text {
+    grid-column: 1;
+    grid-row: 2; }
+  #find-bike img, #unlock-bike img {
+    width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 1 / span 2; } }
 
 .defaultButton {
   background: #28AAB5;
@@ -440,7 +504,9 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20px 80px;
-  background: none; }
+  background: none;
+  position: absolute;
+  bottom: 0; }
   .appwrapper .appfooter {
     background: white;
     grid-row: 2;
@@ -656,3 +722,227 @@ form {
     font-size: 5em;
     margin: 0;
     padding: 1em 0em .5em; }
+
+.create-account {
+  max-width: 80vw;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif; }
+  .create-account input[type=text], .create-account input[type=password] {
+    background: #E8E9F3;
+    width: 100%;
+    margin: 5px 0 22px 0;
+    padding: 15px; }
+  .create-account .submit-btn {
+    display: flex;
+    justify-content: center; }
+
+.app-top {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 2em;
+  margin-bottom: 1em; }
+  .app-top .topicon {
+    height: 47px;
+    width: auto;
+    margin: 0; }
+  .app-top h5 {
+    margin: 0 1em;
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif; }
+
+.main-content-app {
+  background-image: url("../images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh; }
+
+.headerimg img {
+  width: 100%;
+  height: auto; }
+
+.menubar {
+  display: flex;
+  align-items: baseline;
+  height: 42px;
+  padding-bottom: 10px; }
+  .menubar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white; }
+
+.appmenu {
+  border-right: 1px solid #868282;
+  padding-right: 30px; }
+
+.appheader {
+  background: #CECECE; }
+
+.searchTerm {
+  border: 2px solid #28AAB5;
+  height: 25px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF; }
+
+.searchTerm:focus {
+  color: #28AAB5; }
+
+.searchButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #28AAB5;
+  background: #28AAB5;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  margin-left: -10px; }
+
+#business-hero {
+  background-image: url("../images/hop-on-nature.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(30%);
+  width: 100vw;
+  height: 20em;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 0.5fr 1fr 1fr; }
+  #business-hero #business-headline {
+    font-size: 4.6em;
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    text-align: center; }
+  @media (min-width: 45em) {
+    #business-hero {
+      height: 35em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr); }
+      #business-hero #business-headline {
+        font-size: 6em;
+        grid-column: 2;
+        grid-row: 3; } }
+
+.business-inquiries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#business-wrapper {
+  margin: 1em; }
+  #business-wrapper img {
+    width: 100%;
+    height: auto; }
+  #business-wrapper p {
+    line-height: 30px;
+    padding-bottom: 1em; }
+
+#business-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+@media (min-width: 45em) {
+  #business-wrapper {
+    margin: 1em 7em;
+    display: flex; }
+    #business-wrapper p, #business-wrapper img {
+      width: 45%; }
+    #business-wrapper img {
+      height: 90%; } }
+
+#or {
+  display: flex;
+  align-items: center; }
+  #or svg {
+    width: 80px;
+    height: 10px; }
+    @media (min-width: 45em) {
+      #or svg {
+        width: 250px; } }
+  #or span {
+    padding: 1.5em;
+    font-family: "Lobster", serif;
+    font-size: 1.5em; }
+    @media (min-width: 45em) {
+      #or span {
+        padding: 2em;
+        font-size: 3em; } }
+
+#give-us-a-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lobster", serif;
+  margin-top: 0;
+  text-align: center; }
+
+#contact-us-headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form-wrapper {
+  border-top: 3px solid whitesmoke;
+  padding-bottom: 2em;
+  border-bottom: 3px solid whitesmoke; }
+  .form-wrapper p {
+    text-align: center;
+    font-size: 1.6em; }
+  .form-wrapper #form-title {
+    text-align: center; }
+
+.contact-form {
+  margin-top: 30px;
+  width: 75vw; }
+  .contact-form .input-block {
+    background-color: white;
+    border: solid 1px grey;
+    padding: 0.6em;
+    margin-bottom: 20px; }
+    .contact-form .input-block.textarea {
+      height: 100%; }
+      .contact-form .input-block.textarea .form-control {
+        height: auto;
+        resize: none; }
+    .contact-form .input-block .form-control {
+      margin: 0;
+      padding: 0.6em 0;
+      border: none;
+      height: auto;
+      width: 97%;
+      font-size: 18px; }
+  .contact-form .square-button {
+    background: #272635;
+    border-radius: 5px;
+    padding: 5px;
+    height: 60px;
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 60px;
+    width: 100%; }
+    .contact-form .square-button:hover, .contact-form .square-button:focus {
+      background-color: #000000;
+      cursor: pointer; }
+
+@media (min-width: 45em) {
+  .col-50 {
+    display: inline-block;
+    width: 49.5%; }
+  .button-wrap {
+    display: flex;
+    justify-content: center; }
+    .button-wrap .square-button {
+      width: 50%; } }
