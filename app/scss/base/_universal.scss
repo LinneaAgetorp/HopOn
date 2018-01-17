@@ -19,7 +19,9 @@ a{
 
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 h1, h2, h3, h4{
     color: map_get($colors, bright);
