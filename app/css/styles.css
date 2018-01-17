@@ -1,6 +1,7 @@
 .defaultButton, .menuButton, .facebookButton {
   display: inline-block;
-  color: white; }
+  color: white;
+  text-align: center; }
 
 /* sass breakpoint mixin */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -424,10 +425,11 @@ h4 {
   padding: 10px; }
 
 .menuButton {
-  background: #868DA7;
+  background: rgba(134, 141, 167, 0.7);
   border-radius: 20px;
   padding: 20px;
-  opacity: 50%; }
+  opacity: 50%;
+  width: 150px; }
 
 .facebookButton {
   background: #2F5F9E;
@@ -514,7 +516,7 @@ form {
   grid-row: 2;
   text-align: center; }
 
-@media (max-width: 40em) {
+@media (min-width: 40em) {
   #minasidor-grid {
     display: flex;
     flex-direction: column; }
@@ -524,3 +526,133 @@ form {
     padding: 1em; }
   #submit {
     margin-left: em; } }
+
+#desktop nav {
+  display: none; }
+  #desktop nav .login form, #desktop nav .login .forgotPassword, #desktop nav .login .createAccount, #desktop nav .login .facebookButton {
+    display: none; }
+  #desktop nav ul {
+    margin-top: 10px; }
+    #desktop nav ul li {
+      margin: 15px; }
+
+#desktop #toggle-menu:checked ~ nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  height: 1000px;
+  width: 220px;
+  background: #272635;
+  /* Close button */
+  /* Login box */
+  /* Page navigation */ }
+  #desktop #toggle-menu:checked ~ nav label.menu {
+    order: 1;
+    width: 100%; }
+  #desktop #toggle-menu:checked ~ nav .login {
+    order: 3;
+    margin-top: 30px; }
+  #desktop #toggle-menu:checked ~ nav ul {
+    order: 2; }
+
+/* Don't show foldable menu on desktop */
+@media (min-width: 40em) {
+  #desktop nav {
+    display: block;
+    position: static;
+    height: 100%;
+    width: auto; }
+    #desktop nav .login {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      padding: 1em;
+      width: 500px;
+      background: rgba(134, 141, 167, 0.7);
+      border-radius: 20px; }
+      #desktop nav .login form, #desktop nav .login .forgotPassword, #desktop nav .login .createAccount, #desktop nav .login .facebookButton {
+        display: inline-block; }
+      #desktop nav .login form {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2; }
+        #desktop nav .login form input {
+          margin: 0 20px; }
+      #desktop nav .login .forgotPassword, #desktop nav .login .createAccount {
+        color: white; }
+      #desktop nav .login .defaultButton, #desktop nav .login .facebookButton {
+        width: 150px; }
+    #desktop nav ul {
+      margin-top: 0;
+      display: flex;
+      justify-content: center; } }
+
+/* Style the whole hamburger icon */
+#mobile-nav {
+  height: 20px;
+  position: relative;
+  padding: 2em;
+  transition: all 0.5s ease-in-out;
+  /* Style the hamburger layers */ }
+  #mobile-nav span {
+    position: absolute;
+    margin: 1em;
+    height: 9px;
+    width: 60px;
+    background-color: white;
+    border-radius: 9px;
+    left: 0;
+    transition: all 0.25s ease-in-out;
+    /* Position hamburger layers */ }
+    #mobile-nav span:nth-of-type(1) {
+      top: 0px; }
+    #mobile-nav span:nth-of-type(2) {
+      top: 18px; }
+    #mobile-nav span:nth-of-type(3) {
+      top: 36px; }
+
+/* Checkbox control */
+#toggle-menu {
+  /* hide checkbox */
+  display: none; }
+
+/* Close icon */
+#close {
+  background: #272635;
+  height: 15px;
+  position: relative;
+  padding: 2em 3em;
+  transition: all 0.5s ease-in-out; }
+  #close span {
+    display: block;
+    position: absolute;
+    margin: 1em;
+    height: 9px;
+    width: 60px;
+    background-color: white;
+    border-radius: 9px;
+    left: 0;
+    transition: all 0.25s ease-in-out; }
+    #close span:nth-child(1) {
+      top: 18px;
+      transform: rotate(135deg); }
+    #close span:nth-child(2) {
+      top: 18px;
+      transform: rotate(-135deg); }
+
+/* Don't show hamburger icon on desktop */
+@media (min-width: 40em) {
+  label.menu {
+    display: none; } }
+
+#desktop header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/heroImage.png");
+  background-size: cover;
+  padding-bottom: 3em; }
+  #desktop header h1 {
+    text-align: center;
+    color: white;
+    font-size: 5em;
+    margin: 0;
+    padding: 1em 0em .5em; }

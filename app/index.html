@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,68 @@
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
+
 <body id="desktop">
 
+    <!-- 
+        Menu 
+    -->
     <header>
-        <div class="hamburger"></div>
 
+        <!-- Hidden checkbox for main menu -->
+        <input type="checkbox" class="nav-toggle" id="toggle-menu" />
+
+        <!-- Hamburger menu icon -->
+        <label for="toggle-menu" class="menu">
+            <div id="mobile-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </label>
+
+        <!-- Logotype -->
         <h1>HopOn!</h1>
 
-        <div class="login">
-            <a href="" class="defaultButton">Default button</a>
-            <a href="" class="menuButton">Menu button</a>
-            <a href="" class="facebookButton">Facebook button</a>
-        </div>
+        <!--
+            Main navigation 
+        -->
+        <nav>
+            <!-- Close button for menu on mobile -->
+            <label for="toggle-menu" class="menu">
+                <div id="close">
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
 
-        <nav></nav>
+            <!-- Login box -->
+            <div class="login">
+                <form>
+                    <input id="username">
+                    <input id="password">
+                </form>
+                <a href="" class="forgotPassword">Jag har glömt mitt lösenord</a>
+                <a href="" class="loginButton defaultButton">Logga in</a>
+                <a href="" class="createAccount">Skapa konto</a>
+                <a href="" class="facebookButton">Anslut via Facebook</a>
+            </div>
+
+            <!-- Page navigation -->
+            <ul>
+                <li>
+                    <a href="" class="menuButton">Så här gör du</a>
+                </li>
+                <li>
+                    <a href="" class="menuButton">Vilka vi är</a>
+                </li>
+                <li>
+                    <a href="" class="menuButton">Affärsförfrågningar</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    
+
 </body>
+
 </html>
