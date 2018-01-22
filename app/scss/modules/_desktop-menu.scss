@@ -7,7 +7,7 @@
                 display: none;
             }
             .defaultButton{
-                font-family: map_get($fonts, font-text);
+
             }
         }
 
@@ -15,7 +15,7 @@
             margin-top: 10px;
             li {
                 margin: 15px;
-                font-family: map_get($fonts, font-text);
+
             }
         }
     }
@@ -72,7 +72,7 @@
 
                 form, .forgotPassword, .createAccount, .facebookButton {
                     display: inline-block;
-                    font-family: map_get($fonts, font-text);
+
 
                 }
 
@@ -92,7 +92,7 @@
 
                 .defaultButton, .facebookButton {
                     width: 160px;
-                    font-family: map_get($fonts, font-text);
+
                 }
             }
 
@@ -101,7 +101,7 @@
                 display: flex;
                 justify-content: center;
                 li {
-                    font-family: map_get($fonts, font-text);
+
                 }
             }
         }

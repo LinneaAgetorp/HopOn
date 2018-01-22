@@ -1,6 +1,7 @@
 body{
     margin: 0 auto;
     padding: 0;
+    font-family: map_get($fonts, font-text);
 }
 #desktop{
     background-color: #CECECE;

@@ -402,7 +402,8 @@ template {
 
 body {
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
 
 #desktop {
   background-color: #CECECE; }
@@ -597,13 +598,10 @@ form {
   display: none; }
   #desktop nav .login form, #desktop nav .login .forgotPassword, #desktop nav .login .createAccount, #desktop nav .login .facebookButton {
     display: none; }
-  #desktop nav .login .defaultButton {
-    font-family: "Roboto", sans-serif; }
   #desktop nav ul {
     margin-top: 10px; }
     #desktop nav ul li {
-      margin: 15px;
-      font-family: "Roboto", sans-serif; }
+      margin: 15px; }
 
 #desktop #toggle-menu:checked ~ nav {
   display: flex;
@@ -643,8 +641,7 @@ form {
       background: rgba(134, 141, 167, 0.7);
       border-radius: 20px; }
       #desktop nav .login form, #desktop nav .login .forgotPassword, #desktop nav .login .createAccount, #desktop nav .login .facebookButton {
-        display: inline-block;
-        font-family: "Roboto", sans-serif; }
+        display: inline-block; }
       #desktop nav .login form {
         grid-column: 1 / 3;
         grid-row: 1 / 2; }
@@ -657,14 +654,11 @@ form {
       #desktop nav .login .forgotPassword, #desktop nav .login .createAccount {
         color: white; }
       #desktop nav .login .defaultButton, #desktop nav .login .facebookButton {
-        width: 160px;
-        font-family: "Roboto", sans-serif; }
+        width: 160px; }
     #desktop nav ul {
       margin-top: 0;
       display: flex;
-      justify-content: center; }
-      #desktop nav ul li {
-        font-family: "Roboto", sans-serif; } }
+      justify-content: center; } }
 
 /* Style the whole hamburger icon */
 #mobile-nav {
