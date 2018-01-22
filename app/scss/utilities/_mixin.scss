@@ -33,6 +33,12 @@
     border-radius: $roundness;
     padding: $padding;
 
+    &:hover {
+        background: lighten($color, 10%);
+        text-decoration: none;
+        color: white;
+    }
+
 }
 
 /// Mixin for forms
