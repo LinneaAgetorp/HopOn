@@ -100,17 +100,16 @@ gulp.task('louis', function() {
     timeout: 60,
     url: 'http://localhost:3000',
     performanceBudget: {
-      requests: 10,
-      headersSize: 8000,
-      cssSize: 10000,
-      jsSize: 2000,
-      consoleMessages: 3,
-      imageSize: 700000,
-      domContentLoaded: 2000,
-      smallestLatency: 1000,
-      medianLatency: 10,
-      slowestResponse: 1000,
-      timeToFirstImage: 700
+      requests: 57,
+      headersSize: 256600,
+      cssSize: 28829,
+      jsSize: 294201,
+      imageSize: 952295,
+      domContentLoaded: 1396,
+      smallestLatency: 65,
+      medianLatency: 245,
+      slowestResponse: 1901,
+      timeToFirstImage: 1761
       
     }
   });
