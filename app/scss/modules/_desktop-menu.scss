@@ -6,12 +6,16 @@
             form, .forgotPassword, .createAccount, .facebookButton {
                 display: none;
             }
+            .defaultButton{
+
+            }
         }
 
         ul {
             margin-top: 10px;
             li {
                 margin: 15px;
+
             }
         }
     }
@@ -68,6 +72,8 @@
 
                 form, .forgotPassword, .createAccount, .facebookButton {
                     display: inline-block;
+
+
                 }
 
                 form {
@@ -86,6 +92,7 @@
 
                 .defaultButton, .facebookButton {
                     width: 160px;
+
                 }
             }
 
@@ -94,6 +101,7 @@
                 display: flex;
                 justify-content: center;
                 li {
+
                 }
             }
         }
