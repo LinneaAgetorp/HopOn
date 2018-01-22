@@ -1,0 +1,47 @@
+.favorite-content {
+    margin-top: 130px;
+    background: white;
+    height: 482px;
+    .favorite-station {
+        display:flex;
+        border-bottom: 1px solid lightgray;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+.fav-name, .fav-bikes {
+    display: flex;
+    font-size: 14px;
+    .station-name {
+        font-weight: bold;
+        &:after {
+            content: "|";
+            margin-left: 40px;
+            color: rgba(112, 112, 112, 0.493);
+        }
+    }
+}
+.fav-bikes {
+    p {
+        font-weight: lighter;
+        font-style: italic;
+        margin-right: 20px;
+    }
+}
+.fav-name {
+    margin-bottom: 5px;
+}
+
+.add-new-fav {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    .defaultButton {
+        display: flex;
+        align-items: baseline;
+        .add {
+            font-weight: bold;
+            font-size: 25px;
+        }
+    }
+}
