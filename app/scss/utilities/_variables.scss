@@ -13,16 +13,20 @@ $breakpoints:(
     
 ///colorscheme
 $colors: (
-    bright: rgb(255, 255, 255),
-    medium-grey: rgb(149, 152, 154),
-    hover-effect: rgb(204, 183, 183),
-    coffee: rgb(85, 51, 38)
+    bright: #FFFFFF,
+    dark: #868DA7,
+    darker: #272635,
+    turquoise: #28AAB5,
+    black: #000000,
+    fb: #2F5F9E
 
 ) !default;
 
 ///Font
 $fonts: (
+
 font-text: ('Roboto', sans-serif),
 font-headlines: ('Lobster', serif),
 app-font: ('Arial, Helvetica, sans-serif')
+
 )
