@@ -1,8 +1,6 @@
 //Styling hero image and headline about us for mobile and desktop
 #aboutus-hero{
-  background-image: url("../images/bike-light.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include hero-background('../images/bike-light.jpg');
   height: 20em;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
