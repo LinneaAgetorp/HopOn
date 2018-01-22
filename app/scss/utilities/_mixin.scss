@@ -32,7 +32,7 @@
     background: $color;
     border-radius: $roundness;
     padding: $padding;
-
+    cursor: pointer;
     &:hover {
         background: lighten($color, 10%);
         text-decoration: none;
@@ -49,4 +49,11 @@
     margin: $margin;
     padding: $padding;
 
+}
+
+///Mixin for hero-background-image
+@mixin hero-background($img-path, $bg-repeat: no-repeat, $bg-size: cover) {
+    background-image: url($img-path);
+    background-repeat: $bg-repeat;
+    background-size: $bg-size;
 }

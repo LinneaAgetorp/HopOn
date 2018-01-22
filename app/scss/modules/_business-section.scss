@@ -1,8 +1,6 @@
 //styling hero-image and headline
 #business-hero{
-  background-image: url("../images/hop-on-nature.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include hero-background($img-path: '../images/hop-on-nature.jpeg');
   filter: grayscale(30%);
   width: 100vw;
   height: 20em;

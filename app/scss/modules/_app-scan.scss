@@ -1,3 +1,24 @@
-.scan-header {
-    font-size: 8px;
+.scan-area {
+    background-image: url("../images/scan2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 490px;
+}
+.scan-app-top {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2em;
+    margin-bottom: 1px;
+    .topicon {
+        height: 47px;
+        width: auto;
+        margin: 0;
+    }
+    h5 {
+        margin: 0 1em;
+        font-size: 1.7em;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 }
