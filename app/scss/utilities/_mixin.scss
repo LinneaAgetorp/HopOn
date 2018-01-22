@@ -27,7 +27,7 @@
 
 }
 
-@mixin make-button($color: #28AAB5, $roundness: 5px, $padding: 10px) {
+@mixin make-button($color: map-get($colors, turquoise), $roundness: 5px, $padding: 10px) {
     @extend %button;
     background: $color;
     border-radius: $roundness;
