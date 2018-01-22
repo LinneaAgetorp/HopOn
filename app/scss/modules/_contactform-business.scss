@@ -3,62 +3,39 @@
 }
 
 
-//styling layout of contact-section
-.form-wrapper{
-  border-top: 3px solid whitesmoke;
-  padding-bottom: 2em;
-  border-bottom: 3px solid whitesmoke;
-  p{
-    text-align: center;
-    font-size: 1.6em;
-  }
-  #form-title{
-    text-align: center;
-  }
-}
-
-
 //contact form styling
 .contact-form{
   margin-top: 30px;
   width: 75vw;
   .input-block{
     background-color: white;
-    border: solid 1px grey;
+    border: solid 1px darkgray;
+    box-shadow: 1px 1px gray;
     padding: 0.6em;
     margin-bottom: 20px;
 
     &.textarea{
       height: 100%;
-      .form-control{
-        height: auto;
-        resize: none;
-      }
     }
 
     .form-control{
       margin: 0;
       padding: 0.6em 0;
       border: none;
-      height: auto;
       width: 97%;
       font-size: 18px;
-      color: map_get($colors, dark);
     }
 
 
   }
-  //byt ut knappen till mixin eller placeholder
+  // skicka-knappen styling
   #square-button{
     @include make-button();
     height: 60px;
     width: 100%;
     font-size: 26px;
-    color: white;
     text-transform: uppercase;
     font-weight: 700;
-    text-align: center;
-    padding: 0 60px;
   }
 }
 
@@ -66,12 +43,12 @@
 @include respond-to('medium') {
   .col-50 {
     display: inline-block;
-    width: 49.5%;
+    width: 49.5%; //för- efternamn får plats bredvid varandra i desktop-view
   }
   .button-wrap{
     display: flex;
     justify-content: center;
-    #square-button{
+    #square-button{ //knappens bredd är 50% i desktop-view
       width: 50%;
     }
 
