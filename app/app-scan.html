@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Create Account</title>
+  <title>Skanna QR-koden</title>
   <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/print.css">
@@ -33,7 +33,7 @@
             </li>
             <li class="appnavlink">
                 <img src="svg/003-cogwheels-for-settings.svg" alt="" class="appnavicon">
-                <a href="#"><p>Inställningar</p></a>
+                <a href="app-settings.html"><p>Inställningar</p></a>
             </li>
             <li class="appnavlink">
                 <img src="svg/002-questions-circular-button.svg" alt="" class="appnavicon">
@@ -41,7 +41,7 @@
             </li>
             <li class="appnavlink">
                 <img src="svg/001-screen.svg" alt="" class="appnavicon">
-                <a href="#"><p>Till webbsidan</p></a>
+                <a href="site-index.html"><p>Till webbsidan</p></a>
             </li>
         </ul>
     </nav>
@@ -66,48 +66,13 @@
     </div>
   </header>
   <!--End header-->
-
+ <div class="main-content-app">
   <!-- App headline/Create account -->
   <div class="app-top">
-    <img class="topicon usericon" src="svg/004-profile.svg" alt="">
-    <h5>Skapa Konto</h5>
+    <img class="topicon usericon" src="svg/qr-code.svg" alt="">
+    <h5 class="scan-header">Scanna QR-koden</h5>
   </div>
-
-  <!-- Registration form -->
-  <form>
-    <div class="create-account">
-
-      <label>Epost</label>
-      <input type="text" name="email">
-
-      <label>Lösenord</label>
-      <input type="password" name="psw">
-
-      <label>Upprepa lösenord</label>
-      <input type="password" name="psw-repeat">
-
-      <div class="submit-btn">
-        <a href="app-main.html" class="defaultButton">Bli medlem</a>
-      </div>
-  </form>
-  <!-- End form -->
-
-  <!--Footer -->
-  <footer>
-    <div class="appwrapper">
-      <div class="appfooter"></div>
-      <div class="nearby">
-        <img class="footericon" src="svg/nearby.svg" alt="">
-        <p>Nära mig</p>
-      </div>
-      <div class="bike">
-        <img class="footericon bikeicon" src="svg/bike.svg" alt="">
-      </div>
-      <div class="favorite">
-        <img class="footericon" src="svg/favorite.svg" alt="">
-        <p>Favoriter</p>
-      </div>
-  </footer>
+</div>
 
 
 
