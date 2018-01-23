@@ -2,7 +2,7 @@
 @include respond-to(medium) {
   #find-bike, #unlock-bike {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 250px;
     //grid-template-rows: 1fr 2.5fr;
     grid-column-gap: 2em;
     margin: 3em 0;

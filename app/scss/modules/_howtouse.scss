@@ -7,6 +7,10 @@
   p {
     line-height: 30px;
   }
+  #find-bike img, #unlock-bike img{
+    @include center-content;
+    max-width: 90vw;
+  }
 }
 
 //styling image and text for mobile view
@@ -15,18 +19,7 @@
     text-align: center;
   }
   #find-bike img, #unlock-bike img{
-    @include center-content;
-    width: 70%;
-    max-width: 200px;
-    height: 300px; //justera höjd när bilden läggs in
     margin: 1em auto;
   }
 }
-
-
-//border som "placeholder" för skärmdumparna från appen
-#find-bike img, #unlock-bike img{
-  border: 2px solid black;
-}
-
 

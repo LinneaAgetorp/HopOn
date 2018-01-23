@@ -3,11 +3,11 @@
   "viewports": [
     {
       "label": "phone",
-      "width": 320,
+      "width": 620,
       "height": 480
     },
     {
-      "label": "tablet",
+      "label": "desktop",
       "width": 1024,
       "height": 768
     }

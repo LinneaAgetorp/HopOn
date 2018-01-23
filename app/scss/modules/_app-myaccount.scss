@@ -32,5 +32,9 @@
         display: flex;
         max-width: 100px;
         margin-top: 1em;
+        height: 40px;
+        .add {
+            font-size: 18px;
+        }
     }
 }
