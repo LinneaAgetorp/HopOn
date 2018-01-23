@@ -16,8 +16,7 @@
     }
 }
 
-// Center content
-
+/// Center content
 @mixin center-content() {
 
     display: flex;
@@ -27,7 +26,10 @@
 
 }
 
-///Button-mixin
+/// Make button with hover effect.
+/// @param color Button color
+/// @param roundness How round the button edges should be
+/// @param padding How big the button should be
 @mixin make-button($color: map-get($colors, turquoise), $roundness: 5px, $padding: 10px) {
     @extend %button;
     background: $color;
@@ -43,7 +45,11 @@
 
 }
 
-/// Mixin for forms
+/// Mixin for forms.
+/// @param color Background color of input field
+/// @param width The input field width
+/// @param margin The input field margin
+/// @param padding The input field padding
 @mixin make-form($color, $width, $margin: 5px 0 22px 0, $padding: 15px) {
     @extend %form;
     background: $color;
@@ -53,7 +59,10 @@
 
 }
 
-///Mixin for hero-background-image
+/// Mixin for hero-background-image.
+/// @param img-path Path to image
+/// @param bg-repeat How the image should be repeated
+/// @param bg-size How the image should be sized
 @mixin hero-background($img-path, $bg-repeat: no-repeat, $bg-size: cover) {
     background-image: url($img-path);
     background-repeat: $bg-repeat;
