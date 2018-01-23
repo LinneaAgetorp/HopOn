@@ -30,33 +30,3 @@
 }
 
 
-//grid styling for desktop
-@include respond-to(medium) {
-  #find-bike, #unlock-bike {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    //grid-template-rows: 1fr 2.5fr;
-    grid-column-gap: 2em;
-    margin: 3em 0;
-  }
-
-  #find-bike-title, #unlock-bike-title {
-    grid-column: 1;
-    grid-row: 1;
-    margin: 1em 0;
-  }
-
-  #find-bike-text, #unlock-bike-text {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  #find-bike img, #unlock-bike img {
-    width: 100%;
-    height: auto;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-
-  }
-
-}
