@@ -28,7 +28,7 @@
       "hoverSelector": "",
       "clickSelector": "",
       "postInteractionWait": "",
-      "selectors": ["#aboutus-title"],
+      "selectors": ["#square-button"],
       "selectorExpansion": true,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
