@@ -2,119 +2,136 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HopOn | Favoriter </title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-         <!--build:css css/styles.min.css-->
-         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/print.css">
-         <!--endbuild-->
-    </head>
-    <body id="appbody">
-        <input class="trigger" type="checkbox" id="mainNavButton">
-        <div class="test">
-            
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HopOn | Favoriter </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css">
+    <!--endbuild-->
+</head>
+
+<body id="appbody">
+    <input class="trigger" type="checkbox" id="mainNavButton">
+    <div class="test">
+
+    </div>
+    <!-- This is the menu for the app.  Hidden with checkbox -->
+    <nav id="appnavmenu">
+        <div class="appnavclose">
+            <label for="mainNavButton" class="menu" onclick>
+                <p>x</p>
+            </label>
         </div>
-         <!-- This is the menu for the app.  Hidden with checkbox -->
-        <nav id="appnavmenu">
-            <div class="appnavclose">
+        <div class="appnavheader">
+            <img src="svg/menu.svg" alt="" class="appnavicon">
+            <p>Meny</p>
+        </div>
+        <ul>
+            <li class="appnavlink">
+                <img src="svg/004-profile.svg" alt="" class="appnavicon">
+                <a href="app-myaccount.html">
+                    <p>Mitt konto</p>
+                </a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/003-cogwheels-for-settings.svg" alt="" class="appnavicon">
+                <a href="app-settings.html">
+                    <p>Inställningar</p>
+                </a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/002-questions-circular-button.svg" alt="" class="appnavicon">
+                <a href="app-help.html">
+                    <p>Hjälp</p>
+                </a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/001-screen.svg" alt="" class="appnavicon">
+                <a href="index.html">
+                    <p>Till webbsidan</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Start of the header for the app. This includes the menu button, header, and search -->
+    <header class="appheader">
+        <div class="headerimg">
+            <h1>HopOn!</h1>
+        </div>
+        <div class="menubar">
+            <div class="appmenu">
                 <label for="mainNavButton" class="menu" onclick>
-                    <p>x</p>
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                 </label>
             </div>
-            <div class="appnavheader">
-                <img src="svg/menu.svg" alt="" class="appnavicon">
-                <p>Meny</p>
+            <div>
+                <a href="app-main.html">
+                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                </a>
             </div>
-            <ul>
-                <li class="appnavlink">
-                    <img src="svg/004-profile.svg" alt="" class="appnavicon">
-                    <a href="app-myaccount.html"><p>Mitt konto</p></a>
-                </li>
-                <li class="appnavlink">
-                    <img src="svg/003-cogwheels-for-settings.svg" alt="" class="appnavicon">
-                    <a href="app-settings.html"><p>Inställningar</p></a>
-                </li>
-                <li class="appnavlink">
-                    <img src="svg/002-questions-circular-button.svg" alt="" class="appnavicon">
-                    <a href="app-help.html"><p>Hjälp</p></a>
-                </li>
-                <li class="appnavlink">
-                    <img src="svg/001-screen.svg" alt="" class="appnavicon">
-                    <a href="index.html"><p>Till webbsidan</p></a>
-                </li>
-            </ul>
-        </nav>
+            <div class="search">
+                <input type="search" class="searchTerm" placeholder="Sök efter hållplats...">
+            </div>
+        </div>
+    </header>
 
-        <!-- Start of the header for the app. This includes the menu button, header, and search -->
-            <header class="appheader">
-                <div class="headerimg">
-                    <img src="images/headertest.jpg" alt="">
+    <!-- Start of the main content of the app -->
+    <div class="favorite-content">
+        <a href="app-main.html" class="close-tab">Stäng</a>
+        <div class="app-top">
+            <img class="topicon usericon" src="svg/favorite.svg" alt="">
+            <h5 class="scan-header">Favoritområden</h5>
+        </div>
+        <!-- Individual favorite station -->
+        <div class="favorite-station">
+            <div class="station-text">
+                <div class="fav-name">
+                    <p class="station-name">Växjö Resecentrum</p>
+                    <p class="distance"> 850m</p>
                 </div>
-                <div class="menubar">
-                        <div class="appmenu">
-                                <label for="mainNavButton" class="menu" onclick>
-                                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                                </label>
-                         </div>
-                         <div>
-                            <a href="app-main.html">
-                                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                        <div class="search">
-                            <input type="search" class="searchTerm" placeholder="Sök efter hållplats...">
-                        </div>
-                    </div>
-            </header>
+                <div class="fav-bikes">
+                    <p>Lediga Cyklar: 15</p>
+                    <p>Lediga Platser: 5</p>
+                </div>
+            </div>
+            <div class="remove-btn">
+                <p>x</p>
+            </div>
+        </div>
+        <!-- End of Individual Station -->
+        <!-- Individual favorite station -->
+        <div class="favorite-station">
+            <div class="station-text">
+                <div class="fav-name">
+                    <p class="station-name">Växjö Stortorget</p>
+                    <p class="distance"> 850m</p>
+                </div>
+                <div class="fav-bikes">
+                    <p>Lediga Cyklar: 15</p>
+                    <p>Lediga Platser: 5</p>
+                </div>
+            </div>
+            <div class="remove-btn">
+                <p>x</p>
+            </div>
+        </div>
+        <!-- End of Individual Station -->
+        <div class="add-new-fav">
+            <a href="#" class="defaultButton">
+                <p class="add">+</p>
+                <p>Lägg till nytt favoritområde</p>
+            </a>
+        </div>
+    </div>
+</body>
 
-            <!-- Start of the main content of the app -->
-            <div class="favorite-content">
-                <a href="app-main.html" class="close-tab">Stäng</a>
-                <div class="app-top">
-                    <img class="topicon usericon" src="svg/favorite.svg" alt="">
-                    <h5 class="scan-header">Favoritområden</h5>
-                </div>
-                <!-- Individual favorite station -->
-                <div class="favorite-station">
-                        <div class="station-text">
-                            <div class="fav-name">
-                                <p class="station-name">Växjö Resecentrum</p> <p class="distance"> 850m</p>
-                            </div>
-                            <div class="fav-bikes">
-                                <p>Lediga Cyklar: 15</p> <p>Lediga Platser: 5</p>
-                            </div>
-                        </div>
-                        <div class="remove-btn">
-                            <p>x</p>
-                        </div>      
-                    </div>
-                    <!-- End of Individual Station -->
-                <!-- Individual favorite station -->
-                <div class="favorite-station">
-                    <div class="station-text">
-                        <div class="fav-name">
-                            <p class="station-name">Växjö Stortorget</p> <p class="distance"> 850m</p>
-                        </div>
-                        <div class="fav-bikes">
-                            <p>Lediga Cyklar: 15</p> <p>Lediga Platser: 5</p>
-                        </div>
-                    </div>
-                    <div class="remove-btn">
-                        <p>x</p>
-                    </div>      
-                </div>
-                <!-- End of Individual Station -->
-                <div class="add-new-fav">
-                    <a href="#" class="defaultButton">
-                        <p class="add">+</p>
-                        <p>Lägg till nytt favoritområde</p>
-                    </a>
-                </div>
-            </div>       
-    </body>
 </html>

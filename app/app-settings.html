@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Inställningar</title>
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/print.css">
-  <!--endbuild-->
-  <script src="https://use.fontawesome.com/449eddbd00.js"></script>
+    <meta charset="UTF-8">
+    <title>Inställningar</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css">
+    <!--endbuild-->
+    <script src="https://use.fontawesome.com/449eddbd00.js"></script>
 </head>
 
 <body>
     <input class="trigger" type="checkbox" id="mainNavButton">
     <div class="test">
     </div>
-     <!-- This is the menu for the app.  Hidden with checkbox -->
+    <!-- This is the menu for the app.  Hidden with checkbox -->
     <nav id="appnavmenu">
         <div class="appnavclose">
             <label for="mainNavButton" class="menu" onclick>
@@ -29,35 +29,43 @@
         <ul>
             <li class="appnavlink">
                 <img src="svg/004-profile.svg" alt="" class="appnavicon">
-                <a href="app-myaccount.html"><p>Mitt konto</p></a>
+                <a href="app-myaccount.html">
+                    <p>Mitt konto</p>
+                </a>
             </li>
             <li class="appnavlink">
                 <img src="svg/003-cogwheels-for-settings.svg" alt="" class="appnavicon">
-                <a href="app-settings.html"><p>Inställningar</p></a>
+                <a href="app-settings.html">
+                    <p>Inställningar</p>
+                </a>
             </li>
             <li class="appnavlink">
                 <img src="svg/002-questions-circular-button.svg" alt="" class="appnavicon">
-                <a href="app-help.html"><p>Hjälp</p></a>
+                <a href="app-help.html">
+                    <p>Hjälp</p>
+                </a>
             </li>
             <li class="appnavlink">
                 <img src="svg/001-screen.svg" alt="" class="appnavicon">
-                <a href="index.html"><p>Till webbsidan</p></a>
+                <a href="index.html">
+                    <p>Till webbsidan</p>
+                </a>
             </li>
         </ul>
     </nav>
 
-  <!-- Header with menu and search bar -->
-  <header class="appheader">
-    <div class="headerimg">
-      <img src="images/headertest.jpg" alt="">
-    </div>
-    <div class="menubar">
+    <!-- Header with menu and search bar -->
+    <header class="appheader">
+        <div class="headerimg">
+            <h1>HopOn!</h1>
+        </div>
+        <div class="menubar">
             <div class="appmenu">
-                    <label for="mainNavButton" class="menu" onclick>
-                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                    </label>
-             </div>
-             <div>
+                <label for="mainNavButton" class="menu" onclick>
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </label>
+            </div>
+            <div>
                 <a href="app-main.html">
                     <i class="fa fa-home fa-2x" aria-hidden="true"></i>
                 </a>
@@ -66,90 +74,90 @@
                 <input type="search" class="searchTerm" placeholder="Sök efter hållplats...">
             </div>
         </div>
-  </header>
-  <!--End header-->
- <div class="main-content-app">
-  <!-- App headline/Create account -->
-  <div class="app-top">
-    <img class="topicon usericon" src="svg/003-cogwheels-for-settings.svg" alt="">
-    <h5>Inställningar</h5>
-  </div>
-
-  <!-- Start of settings -->
-  <div class="setting-option">
-    <div class="text">
-      <p>Aktivera platstjänster</p>
-    </div>
-    <div class="slider">
-        <input type="checkbox" id="switch"/>
-        <label for="switch">Toggle</label>
-    </div>
-  </div>
-<div class="settings">
-    <div class="setting-option">
-        <div class="text">
-          <p>SMS-kvitto</p>
+    </header>
+    <!--End header-->
+    <div class="main-content-app">
+        <!-- App headline/Create account -->
+        <div class="app-top">
+            <img class="topicon usericon" src="svg/003-cogwheels-for-settings.svg" alt="">
+            <h5>Inställningar</h5>
         </div>
-        <div class="slider">
-            <input type="checkbox" id="switch2"/>
-            <label for="switch2">Toggle</label>
+
+        <!-- Start of settings -->
+        <div class="setting-option">
+            <div class="text">
+                <p>Aktivera platstjänster</p>
+            </div>
+            <div class="slider">
+                <input type="checkbox" id="switch" />
+                <label for="switch">Toggle</label>
+            </div>
         </div>
-      </div>
-  
-      <div class="setting-option">
-          <div class="text">
-            <p>Delta i undersökningar</p>
-          </div>
-          <div class="slider">
-              <input type="checkbox" id="switch3"/>
-              <label for="switch3">Toggle</label>
-          </div>
-      </div>
-  </div>
-  <div class="settings-btn">
-      <div class="submit-btn">
-          <a href="#" class="defaultButton">Spara inställningar</a>
-      </div>
-      <div class="submit-btn">
-          <a href="app-login.html" class="defaultButton">Logga ut</a>
-      </div>
-  </div>
-  
+        <div class="settings">
+            <div class="setting-option">
+                <div class="text">
+                    <p>SMS-kvitto</p>
+                </div>
+                <div class="slider">
+                    <input type="checkbox" id="switch2" />
+                    <label for="switch2">Toggle</label>
+                </div>
+            </div>
 
-      
-  
-  <!-- End of Settings -->
-
-  <!--Footer -->
-  <footer>
-    <div class="appwrapper">
-      <div class="appfooter"></div>
-      <div class="nearby">
-        <img class="footericon" src="svg/nearby.svg" alt="">
-        <p>Nära mig</p>
-      </div>
-      <div class="bike">
-        <img class="footericon bikeicon" src="svg/bike.svg" alt="">
-      </div>
-      <div class="favorite">
-        <img class="footericon" src="svg/favorite.svg" alt="">
-        <p>Favoriter</p>
-      </div>
-  </footer>
-</div>
+            <div class="setting-option">
+                <div class="text">
+                    <p>Delta i undersökningar</p>
+                </div>
+                <div class="slider">
+                    <input type="checkbox" id="switch3" />
+                    <label for="switch3">Toggle</label>
+                </div>
+            </div>
+        </div>
+        <div class="settings-btn">
+            <div class="submit-btn">
+                <a href="#" class="defaultButton">Spara inställningar</a>
+            </div>
+            <div class="submit-btn">
+                <a href="app-login.html" class="defaultButton">Logga ut</a>
+            </div>
+        </div>
 
 
 
 
+        <!-- End of Settings -->
+
+        <!--Footer -->
+        <footer>
+            <div class="appwrapper">
+                <div class="appfooter"></div>
+                <div class="nearby">
+                    <img class="footericon" src="svg/nearby.svg" alt="">
+                    <p>Nära mig</p>
+                </div>
+                <div class="bike">
+                    <img class="footericon bikeicon" src="svg/bike.svg" alt="">
+                </div>
+                <div class="favorite">
+                    <img class="footericon" src="svg/favorite.svg" alt="">
+                    <p>Favoriter</p>
+                </div>
+        </footer>
+        </div>
 
 
 
 
-  <!--build:js js/main.min.js -->
-  <script src="js/lib/a-library.js"></script>
-  <script src="js/lib/another-library.js"></script>
-  <script src="js/main.js"></script>
-  <!-- endbuild -->
+
+
+
+
+        <!--build:js js/main.min.js -->
+        <script src="js/lib/a-library.js"></script>
+        <script src="js/lib/another-library.js"></script>
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
 </body>
 
 </html>
