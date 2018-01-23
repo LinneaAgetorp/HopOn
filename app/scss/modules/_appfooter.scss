@@ -7,10 +7,16 @@
     position:absolute;
     bottom:0;
     .appfooter {
+        border-top: 1px solid lightgray;
         background: white;
         grid-row: 2;
         grid-column: 1/4;
         width: 100vw;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        color: black;
     }
 }
 /// Styling for the nearby section of footer
