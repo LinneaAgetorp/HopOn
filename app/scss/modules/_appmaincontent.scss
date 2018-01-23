@@ -1,5 +1,5 @@
 #appbody {
-    background-image: url("../images/map.png");
+    background-image: url("../images/map2.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -13,46 +13,37 @@
 }
 .menubar {
     display: flex;
-    align-items: baseline;
-    height: 42px;
+    height: 60px;
     padding-bottom: 10px;
+    align-items: center;
      p {
          font-family: Arial, Helvetica, sans-serif;
          font-size: 16px;
          color: white;
      }
-}
-.appmenu {
-    border-right: 1px solid #868282;
-    padding-right: 30px;
+     .fa {
+         color: rgb(31, 55, 78);
+     }
 }
 .appheader {
     background: #CECECE;
 }
 
-/// Search box
-  
-  .searchTerm {
-    border: 2px solid #28AAB5;
-    height: 25px;
-    border-radius: 5px;
-    outline: none;
-    color: #9DBFAF;
-  }
-  
-  .searchTerm:focus{
-    color: #28AAB5;
-  }
-  
-  .searchButton {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #28AAB5;
-    background: #28AAB5;
-    text-align: center;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 17px;
-    margin-left: -10px;
-  }
+.search {
+    input {
+        outline: none;
+    }
+    input[type=search] {
+        background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+        border: solid 1px #ccc;
+        padding: 9px 10px 9px 32px;
+        width: 200px;
+        border-radius: 10em;
+        transition: all .5s;
+    }
+    input[type=search]:focus {
+        width: 200px;
+        background-color: #fff;
+        border-color: #66CC75;
+    }
+}
