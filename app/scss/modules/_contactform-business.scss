@@ -31,7 +31,7 @@
   // skicka-knappen styling
   #square-button{
     @include make-button();
-    height: 70px;
+    height: 60px;
     width: 100%;
     font-size: 26px;
     text-transform: uppercase;
