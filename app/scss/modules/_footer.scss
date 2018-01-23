@@ -1,14 +1,17 @@
 #desktop {
+    /* Desktop footer */
     footer {
         background: map-get($colors, turquoise);
         height: 500px;
         margin-top: 1em;
 
+        /* Footer text */
         p {
             text-align: center;
             font-size: 1.5em;
             padding: 3em;
 
+            /* Contact info */
             span {
                 display: block;
                 color: white;
@@ -16,6 +19,7 @@
             }
         }
 
+        /* Footer image */
         img {
             width: 100vw;
         }

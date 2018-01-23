@@ -1,25 +1,25 @@
 #desktop {
+    
     nav {
+        /* Hide menu initially on mobile */
         display: none;
 
         .login {
             form, .forgotPassword, .createAccount, .facebookButton {
                 display: none;
             }
-            .defaultButton{
-
-            }
         }
 
+        /* Page navigation */
         ul {
             margin-top: 10px;
             li {
                 margin: 15px;
-
             }
         }
     }
 
+    /* Show menu when checkbox is checked */
     #toggle-menu:checked ~ nav {
         display: flex;
         flex-direction: column;
@@ -50,15 +50,17 @@
     }
 }
 
-/* Don't show foldable menu on desktop */
+/* Big screen */
 @include respond-to("small") {
     #desktop {
         nav {
+            /* Don't show foldable menu on desktop */
             display: block;
             position: static;
             height: 100%;
             width: auto;
             
+            /* Login box */
             .login {
                 display: grid;
                 align-items: center;
@@ -71,12 +73,12 @@
                 background: map-get($colors, dark-transparency);
                 border-radius: 20px;
 
+                /* Make visible */
                 form, .forgotPassword, .createAccount, .facebookButton {
                     display: inline-block;
-
-
                 }
 
+                /* Input fields */
                 form {
                     grid-column: 1 / 3;
                     grid-row: 1 / 2;
@@ -87,23 +89,23 @@
                     }
                 }
 
+                /* Links */
                 .forgotPassword, .createAccount {
                     color: white;
                 }
 
+                /* Buttons */
                 .defaultButton, .facebookButton {
                     width: 170px;
 
                 }
             }
 
+            /* Page navigation */
             ul {
                 margin-top: 0;
                 display: flex;
                 justify-content: center;
-                li {
-
-                }
             }
         }
     }

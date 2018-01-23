@@ -1,12 +1,15 @@
+/* Default button styling */
 .defaultButton {
     @include make-button();
 }
 
+/* Menu button styling */
 .menuButton {
     @include make-button(map-get($colors, dark-transparency), 20px, 20px);
     width: 170px;
 }
 
+/* Facebook button styling */
 .facebookButton {
     @include make-button(map-get($colors, fb), 0px);
 }
