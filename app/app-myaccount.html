@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Account</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css">
+    <!--endbuild-->
+    <script src="https://use.fontawesome.com/449eddbd00.js"></script>
+</head>
+
+<body>
+    <input class="trigger" type="checkbox" id="mainNavButton">
+    <div class="test">
+    </div>
+    <!-- This is the menu for the app.  Hidden with checkbox -->
+    <nav id="appnavmenu">
+        <div class="appnavclose">
+            <label for="mainNavButton" class="menu" onclick>
+                <p>x</p>
+            </label>
+        </div>
+        <div class="appnavheader">
+            <img src="svg/menu.svg" alt="" class="appnavicon">
+            <p>Meny</p>
+        </div>
+        <ul>
+            <li class="appnavlink">
+                <img src="svg/004-profile.svg" alt="" class="appnavicon">
+                <a href="#">
+                    <p>Mitt konto</p>
+                </a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/003-cogwheels-for-settings.svg" alt="" class="appnavicon">
+                <a href="#">
+                    <p>Inställningar</p>
+                </a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/002-questions-circular-button.svg" alt="" class="appnavicon">
+                <a href="#">
+                    <p>Hjälp</p>
+                </a>
+            </li>
+            <li class="appnavlink">
+                <img src="svg/001-screen.svg" alt="" class="appnavicon">
+                <a href="#">
+                    <p>Till webbsidan</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header with menu and search bar -->
+    <header class="appheader">
+        <div class="headerimg">
+            <img src="images/headertest.jpg" alt="">
+        </div>
+        <div class="menubar">
+            <div class="appmenu">
+                <label for="mainNavButton" class="menu" onclick>
+                    <p>Meny</p>
+                </label>
+            </div>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Sök efter hållplats...">
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!--End header-->
+
+    <!-- App headline/My account -->
+    <div class="app-top">
+        <img class="topicon usericon" src="svg/004-profile.svg" alt="">
+        <h5>Mitt Konto</h5>
+    </div>
+
+    <!--Account info-->
+    <div class="my-info">
+        <label>Namn:</label>
+        <p>Cecilia Cyklist</p>
+
+        <label>Epost:</label>
+        <p>cissicyklar@gmail.com</p>
+
+        <label>Mobil:</label>
+        <p>0704237233</p>
+
+        <a href="#" class="defaultButton">Byt lösenord</a>
+        <a href="#" class="defaultButton">Ändra e-post</a>
+    </div>
+
+    <!--Billing info-->
+    <div class="app-top">
+        <img class="topicon" src="svg/002-money.svg" alt="">
+        <h5>Betalningsmedel</h5>
+    </div>
+
+    <div class="billing-info">
+        <p>Mastercard</p>
+        <div class="credit-card">
+        <img src="svg/credit-card.svg" alt="">
+        <p>**** **** **** 1155</p>
+        </div>
+        <a href="#" class="defaultButton">Lägg till <p class="add">+</p></a>
+    </div>
+
+    <!-- Start of the app footer. These are the buttons to use the services -->
+    <footer>
+        <div class="appwrapper">
+            <!-- Appfooter is a blank div creating space above the buttons -->
+            <div class="appfooter"></div>
+            <div class="nearby">
+                <img class="footericon" src="svg/nearby.svg" alt="">
+                <p>Nära mig</p>
+            </div>
+            <div class="bike">
+                <img class="footericon bikeicon" src="svg/bike.svg" alt="">
+            </div>
+            <div class="favorite">
+                <img class="footericon"  src="svg/favorite.svg" alt="">
+                <p>Favoriter</p>
+            </div>
+    </footer>
+
+</body>
