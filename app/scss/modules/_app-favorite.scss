@@ -9,7 +9,7 @@
         padding-bottom: 20px;
     }
     .app-top {
-        padding: 1em;
+        padding: 0.9em;
     }
     .close-tab {
         display: flex;
@@ -17,6 +17,7 @@
         font-weight: bold;
         padding: 5px;
         margin-bottom: 0;
+        margin-right: 20px;
     }
 }
 .fav-name, .fav-bikes {
@@ -49,9 +50,9 @@
     .defaultButton {
         display: flex;
         align-items: baseline;
-        .add {
-            font-weight: bold;
-            font-size: 25px;
-        }
     }
+}
+.add {
+    font-weight: bold;
+    font-size: 25px;
 }
