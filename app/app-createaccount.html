@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Create Account</title>
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/print.css">
-  <!--endbuild-->
-  <script src="https://use.fontawesome.com/449eddbd00.js"></script>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/print.css">
+    <!--endbuild-->
+    <script src="https://use.fontawesome.com/449eddbd00.js"></script>
 </head>
 
 <body>
     <input class="trigger" type="checkbox" id="mainNavButton">
     <div class="test">
     </div>
-     <!-- This is the menu for the app.  Hidden with checkbox -->
+    <!-- This is the menu for the app.  Hidden with checkbox -->
     <nav id="appnavmenu">
         <div class="appnavclose">
             <label for="mainNavButton" class="menu" onclick>
@@ -29,87 +29,95 @@
         <ul>
             <li class="appnavlink">
                 <img src="svg/004-profile.svg" alt="" class="appnavicon">
-                <a href="app-myaccount.html"><p>Mitt konto</p></a>
+                <a href="app-myaccount.html">
+                    <p>Mitt konto</p>
+                </a>
             </li>
             <li class="appnavlink">
                 <img src="svg/003-cogwheels-for-settings.svg" alt="" class="appnavicon">
-                <a href="app-settings.html"><p>Inställningar</p></a>
+                <a href="app-settings.html">
+                    <p>Inställningar</p>
+                </a>
             </li>
             <li class="appnavlink">
                 <img src="svg/002-questions-circular-button.svg" alt="" class="appnavicon">
-                <a href="app-help.html"><p>Hjälp</p></a>
+                <a href="app-help.html">
+                    <p>Hjälp</p>
+                </a>
             </li>
             <li class="appnavlink">
                 <img src="svg/001-screen.svg" alt="" class="appnavicon">
-                <a href="index.html"><p>Till webbsidan</p></a>
+                <a href="index.html">
+                    <p>Till webbsidan</p>
+                </a>
             </li>
         </ul>
     </nav>
 
-  <!-- Header with menu and search bar -->
-  <header class="appheader">
-    <div class="headerimg">
-      <img src="images/headertest.jpg" alt="">
-    </div>
-    <div class="menubar">
-        <div class="appmenu">
+    <!-- Header with menu and search bar -->
+    <header class="appheader">
+        <div class="headerimg">
+            <h1>HopOn!</h1>
+        </div>
+        <div class="menubar">
+            <div class="appmenu">
                 <label for="mainNavButton" class="menu" onclick>
                     <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
                 </label>
-         </div>
-         <div>
-            <a href="app-main.html">
-                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-            </a>
+            </div>
+            <div>
+                <a href="app-main.html">
+                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="search">
+                <input type="search" class="searchTerm" placeholder="Sök efter hållplats...">
+            </div>
         </div>
-        <div class="search">
-            <input type="search" class="searchTerm" placeholder="Sök efter hållplats...">
-        </div>
+    </header>
+    <!--End header-->
+
+    <!-- App headline/Create account -->
+    <div class="app-top">
+        <img class="topicon usericon" src="svg/004-profile.svg" alt="">
+        <h5>Skapa Konto</h5>
     </div>
-  </header>
-  <!--End header-->
 
-  <!-- App headline/Create account -->
-  <div class="app-top">
-    <img class="topicon usericon" src="svg/004-profile.svg" alt="">
-    <h5>Skapa Konto</h5>
-  </div>
+    <!-- Registration form -->
+    <form>
+        <div class="create-account">
 
-  <!-- Registration form -->
-  <form>
-    <div class="create-account">
+            <label>Epost</label>
+            <input type="text" name="email">
 
-      <label>Epost</label>
-      <input type="text" name="email">
+            <label>Lösenord</label>
+            <input type="password" name="psw">
 
-      <label>Lösenord</label>
-      <input type="password" name="psw">
+            <label>Upprepa lösenord</label>
+            <input type="password" name="psw-repeat">
 
-      <label>Upprepa lösenord</label>
-      <input type="password" name="psw-repeat">
+            <div class="submit-btn">
+                <a href="app-main.html" class="defaultButton">Bli medlem</a>
+            </div>
+    </form>
+    <!-- End form -->
 
-      <div class="submit-btn">
-        <a href="app-main.html" class="defaultButton">Bli medlem</a>
-      </div>
-  </form>
-  <!-- End form -->
-
-  <!--Footer -->
-  <footer>
-    <div class="appwrapper">
-      <div class="appfooter"></div>
-      <div class="nearby">
-        <img class="footericon" src="svg/nearby.svg" alt="">
-        <p>Nära mig</p>
-      </div>
-      <div class="bike">
-        <img class="footericon bikeicon" src="svg/bike.svg" alt="">
-      </div>
-      <div class="favorite">
-        <img class="footericon" src="svg/favorite.svg" alt="">
-        <p>Favoriter</p>
-      </div>
-  </footer>
+    <!--Footer -->
+    <footer>
+        <div class="appwrapper">
+            <div class="appfooter"></div>
+            <div class="nearby">
+                <img class="footericon" src="svg/nearby.svg" alt="">
+                <p>Nära mig</p>
+            </div>
+            <div class="bike">
+                <img class="footericon bikeicon" src="svg/bike.svg" alt="">
+            </div>
+            <div class="favorite">
+                <img class="footericon" src="svg/favorite.svg" alt="">
+                <p>Favoriter</p>
+            </div>
+    </footer>
 
 
 
@@ -118,11 +126,11 @@
 
 
 
-  <!--build:js js/main.min.js -->
-  <script src="js/lib/a-library.js"></script>
-  <script src="js/lib/another-library.js"></script>
-  <script src="js/main.js"></script>
-  <!-- endbuild -->
+    <!--build:js js/main.min.js -->
+    <script src="js/lib/a-library.js"></script>
+    <script src="js/lib/another-library.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
