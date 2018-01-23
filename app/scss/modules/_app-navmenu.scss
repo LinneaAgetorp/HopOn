@@ -1,3 +1,5 @@
+//Styling for the menu which is hidden with checkbox
+
 #appnavmenu {
     height: 100vh;
     background: white;
@@ -62,6 +64,8 @@
 label {
     cursor: pointer;
 }
+
+// Checkbox styling
 #mainNavButton {
     display: none;
 }

@@ -1,7 +1,5 @@
 .app-landingpage {
-    background-image: url("../images/applanding.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include hero-background ("../images/applanding.png");
     height: 100vh;
     h1 {
         margin: 0;

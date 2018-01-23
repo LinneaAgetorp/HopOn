@@ -16,7 +16,7 @@
     }
 }
 
-/// Center content
+/// Mixin for Center content
 @mixin center-content() {
 
     display: flex;
@@ -26,7 +26,7 @@
 
 }
 
-/// Make button with hover effect.
+/// Mixin for making button with hover effect.
 /// @param color Button color
 /// @param roundness How round the button edges should be
 /// @param padding How big the button should be
