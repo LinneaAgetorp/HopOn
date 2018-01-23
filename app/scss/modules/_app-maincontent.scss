@@ -1,16 +1,13 @@
+
+//This is the styling for the main content of the app. This is shown on most of the app pages
+
+//This creates a map background
 #appbody {
-    background-image: url("../images/map2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include hero-background ("../images/map2.png");
     height: 100vh;
 }
 
-.headerimg {
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
+//Styling for the menubar
 .menubar {
     display: flex;
     height: 60px;
@@ -28,7 +25,7 @@
 .appheader {
     background: #CECECE;
 }
-
+//Styling for the search field
 .search {
     input {
         outline: none;
