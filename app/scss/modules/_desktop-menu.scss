@@ -68,7 +68,7 @@
 
                 padding: 1em;
                 width: 500px;
-                background: rgba(134, 141, 167, 0.7);
+                background: map-get($colors, dark-transparency);
                 border-radius: 20px;
 
                 form, .forgotPassword, .createAccount, .facebookButton {
@@ -92,7 +92,7 @@
                 }
 
                 .defaultButton, .facebookButton {
-                    width: 160px;
+                    width: 170px;
 
                 }
             }
