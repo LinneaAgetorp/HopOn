@@ -1,4 +1,6 @@
+//Styling for the setting section of the site
 
+//Styling for each individual option
 .setting-option {
     display: grid;
     grid-template-columns: 1fr 80px;
@@ -7,6 +9,8 @@
         margin-top: 25px;
     } 
 }
+
+//Styling for the option buttons
 .settings-btn {
     display: flex;
     flex-direction: column;
