@@ -1,21 +1,26 @@
+/* Desktop modules */
 @import 'howtouse';
-@import 'buttons';
-@import "appfooter";
 @import "desktop-menu";
 @import "hamburger-icon";
 @import "header";
-@import "app-createaccount";
-@import "app-top";
-@import "appmaincontent";
 @import 'business-section';
-@import 'appnavmenu';
 @import 'contactform-business';
-@import 'app-login';
-@import 'app-settings';
 @import 'aboutus';
-@import 'app-scan';
-@import 'app-favorite';
 @import 'footer';
+
+/* App modules */
 @import 'app-myaccount';
 @import 'app-help';
 @import 'app-header';
+@import 'app-scan';
+@import 'app-favorite';
+@import 'app-login';
+@import 'app-settings';
+@import 'app-navmenu';
+@import "app-createaccount";
+@import "app-top";
+@import "app-maincontent";
+@import "app-footer";
+
+/* Common modules */
+@import 'buttons';
